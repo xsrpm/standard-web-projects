@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Turno CRUD</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+<h1>Turnos</h1>
+<div id="alerts"></div>
+<button id="new" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">Nuevo</button>
+<div class="grid">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Descripcion</th>
+                <th>Codigo</th>
+                <th>Hora Inicio</th>
+                <th>Hora Fin</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="data"></tbody>
+    </table>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <form method="post" id="formModal">
+      <div class="modal-body">      
+            <input type="hidden" id="IdTurno" name="IdTurno">
+            <label for="DesTurno">Descripcion</label>
+            <input type="text" id="DesTurno" name="DesTurno" class="form-control" placeholder="Descripción"/>
+            <label for="CodTurno">Codigo</label>
+            <input type="text" id="CodTurno" name="CodTurno" class="form-control"  placeholder="Codigo" /> 
+            <label for="H_Inicio">Hora Inicial</label>
+            <input type="time" id="H_Inicio" name="H_Inicio" class="form-control"  placeholder="Hora Inicial"/> 
+            <label for="H_Fin">Hora Final</label>
+            <input type="time" id="H_Fin" name="H_Fin" class="form-control"  placeholder="Hora Final" /> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <input type="submit" class="btn btn-primary" value="Registrar"/>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+
+<!--<button id="alertando" type="button" class="btn btn-primary">Alertando</button>-->
+<!--
+<div id="alert" class="alert alert-success fade show" data-dismiss="alert" role="alert">
+  You should check in on some of those fields below.
+</div>
+-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+    // Global Settings
+    let edit = false;
+
+    // Testing Jquery
+
+    fetch();
+
+    //List content in table
+    function fetch() {
+        $.get('turnosajax.back.php?list', response =>{
+            //console.log(response);
+            const data = JSON.parse(response);
+            //console.log(data);
+            let template = '';
+            data.forEach(row => {
+                template += `
+                    <tr>
+                        <td>${row.IdTurno}</td>
+                        <td><a href="#" class="task-item">${row.DesTurno}</a></td>
+                        <td>${row.CodTurno}</td>
+                        <td>${row.H_Inicio}</td>
+                        <td>${row.H_Fin}</td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal" data-id="${row.IdTurno}">Editar</button>
+                                <!--<input type="hidden" name="id" value="${row.IdTurno}">-->
+                                <button id="${row.IdTurno}" type="button" class="btn btn-danger btnDelete" >Eliminar</button>
+                            </div>
+                        </td>
+                    </tr>
+                    `
+            });
+            $('#data').html(template);
+        });
+    }
+
+    //Submit (to edit / insert)
+    $('#formModal').submit( e => {
+        e.preventDefault();
+        const postData = {
+            IdTurno: $('#IdTurno').val(),
+            DesTurno : $('#DesTurno').val(),
+            CodTurno : $('#CodTurno').val(),
+            H_Inicio : $('#H_Inicio').val(),
+            H_Fin : $('#H_Fin').val()
+        };
+        const url = !edit ? 'turnosajax.back.php?register' : 'turnosajax.back.php?modify';
+        //console.log(postData, url);
+        $.post(url, postData, response => {
+            //console.log(response);
+            $('#formModal').trigger('reset');
+            fetch();
+            if(!edit)
+                alert("insert");
+            else
+                alert("update");
+        });
+        $('#modal').modal('hide');
+    });
+
+    //Open Modal (to edit / insert)
+    $('#modal').on('show.bs.modal', e => {
+        var button = $(e.relatedTarget) // Button that triggered the modal
+        //console.log(button);
+        if(button.attr("id") === "new"){
+            $('#formModal').trigger('reset');
+            edit=false;
+        }
+        else{
+            var id = button.data('id') // Extract info from data-* attributes
+            $.post('turnosajax.back.php?listForId', {id}, response => {
+                //console.log(response);
+                const data = JSON.parse(response);
+                //console.log(data);
+                $('#IdTurno').val(data.IdTurno);
+                $('#DesTurno').val(data.DesTurno);
+                $('#CodTurno').val(data.CodTurno);
+                $('#H_Inicio').val(data.H_Inicio);
+                $('#H_Fin').val(data.H_Fin);
+            });
+            edit=true;
+        }
+    });
+
+    // Delete a row
+    $(document).on('click', '.btnDelete', e => {
+        if(confirm('Estas seguro que deseas eliminar?')) {
+            const id = e.target.id;
+            //console.log(id);
+            $.post('turnosajax.back.php?remove', {id}, response => {
+                //console.log(response);
+                fetch();
+                alert("delete");
+            });
+        }
+    });
+
+    function alert(tipo){
+        //console.log($("#alert"));
+        //$("#alert").show('fade'); 
+
+        $("#alerts").animate({
+            height: '+=72px'
+        }, 300);
+
+        if(tipo === "insert" ){
+            $('<div class="alert alert-success">' +
+                    '<button type="button" class="close" data-dismiss="alert">' +
+                    '&times;</button>Registro Exitoso!</div>').hide().appendTo('#alerts').fadeIn(600);
+        }
+        else if(tipo === "update"){
+            $('<div class="alert alert-success">' +
+                    '<button type="button" class="close" data-dismiss="alert">' +
+                    '&times;</button>Actualización Exitosa!</div>').hide().appendTo('#alerts').fadeIn(600);
+        }
+        else{
+            $('<div class="alert alert-success">' +
+                    '<button type="button" class="close" data-dismiss="alert">' +
+                    '&times;</button>Eliminación Exitosa!</div>').hide().appendTo('#alerts').fadeIn(600);
+        }
+
+        $(".alert").delay(1500).fadeOut(
+            "normal",
+            ()=>{
+                $(this).remove();
+            }
+        );
+
+        $("#alerts").delay(2000).animate({
+            height: '-=72px'
+        }, 300);
+    }
+</script>
+</body>
+</html>

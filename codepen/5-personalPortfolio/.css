@@ -1,0 +1,143 @@
+*{
+    margin:0px;
+    padding:0px;
+    color: white;
+  }
+  
+  #navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    background-color:#13b066;
+    display:inline-block;
+    height:auto;
+    text-align:right;
+  }
+  
+  @media (max-width: 75em){}
+  
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  #navbar a{
+    padding: 1em;
+    display:inline-block;
+  }
+  
+  #navbar a:hover{
+    background-color:white;
+  }
+  
+  h1{
+        font-size: 6rem;
+  }
+  
+  #welcome-section{
+    height: 100vh;
+    width: 100%;
+    display: table;
+    background-color:#3a3d40; 
+  }
+  
+  #welcome-section div{
+    display: table-row;
+  }
+  
+  #welcome-section div div{
+    display: table-cell;
+    text-align:center;
+    vertical-align:middle;
+  }
+  
+  #projects{
+    text-align:center;
+    padding: 10rem 2rem;
+    background-color: #1349b0;
+  }
+  
+  h2{
+    text-align:center;
+    font-size: 4.2rem;
+  }
+  
+  .projects-section-header{
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid white;
+  }
+  
+  .projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+        margin-bottom: 0px;
+    margin-bottom: 6rem;
+  }
+  
+  .project{
+    background: #13b066;;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+  }
+  
+  img{
+    display:block;
+  }
+  
+  .project-img{
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .project-title{
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+  }
+  
+  #contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: black;
+  }
+  
+  #contact-links{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+  }
+  
+  .contact-details{
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+  }
+  
+  footer{
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: black;
+    border-top: 4px solid red;
+  }
+  
+  footer p {
+    margin: 1em;
+  }

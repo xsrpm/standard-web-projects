@@ -1,0 +1,42 @@
+body {
+    background-image: url("https://www.privacyparent.com/wp-content/uploads/2018/09/alex-machado-435966-unsplash.jpg");
+    background-size: 100em;
+    color: white;
+  }
+  
+  #title{
+    text-align:center;
+    font-size:xx-large;
+    
+  }
+  
+  #description{
+    text-align:center;
+    font-size:large;
+  }
+  
+  form{
+    width:800px;
+    margin:auto;
+  }
+  
+  form * {
+    display:block;
+    font-size:x-large;
+  }
+  
+  form .option * {
+    display:inline;
+  }
+  
+  form .item{
+    margin:1em;
+  }
+  
+  form .form-control{
+    width:100%;
+  }
+  
+  form textarea{
+    min-height:5em;
+  }

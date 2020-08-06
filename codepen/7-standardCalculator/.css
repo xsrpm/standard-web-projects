@@ -1,0 +1,22 @@
+*{
+    padding:0;
+    margin:0;
+  } 
+  
+  body{
+    text-align:center;
+  }
+  #calculator{
+    width:40%;
+    margin:auto;
+  }
+  #calculator div *{
+    display: inline-block;
+    width: 25%;
+    float:left;
+  }
+  #calc{
+    width: 99%;
+    box-sizing:content-box;
+    text-align: right; 
+  }

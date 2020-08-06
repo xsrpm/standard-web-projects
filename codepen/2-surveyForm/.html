@@ -1,0 +1,47 @@
+<article>
+    <h1 id="title">Internet use survey</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <div class="item">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" class="form-control" required />
+      </div>
+      <div class="item">
+      <label id="email-label" for="name">Email</label>
+      <input type="email" id="email" placeholder="Enter your Email" name="email" class="form-control" required />
+      </div>
+      <div class="item">
+      <label id="number-label" for="number">Age (Optional)</label>
+      <input type="number" id="number" name="number" min="0" max="110" placeholder="Age" class="form-control" required />
+      </div>
+      <div class="item">
+      <label id="dropdown-label" for="dropdown">Which option best describes your activity in Internet?</label>
+      <select id="dropdown" name="dropdown" class="form-control">
+        <option value="study">Study
+        <option value="work">Work
+        <option value="entertainment">Entertainment
+      </select>
+      </div>
+      <div class="item">
+      <label id="radio-label">How many hours a day do you use the internet?</label>
+      <div class="option"><input id="hours0" type="radio" name="hours" value="1-2"/><label for="hours0">0 - 2 h.</label></div>
+      <div class="option"><input id="hours1" type="radio" name="hours" value="2-4"/><label for="hours1">2 - 4 h.</label></div>
+      <div class="option"><input id="hours2" type="radio" name="hours" value="4-6"/><label for="hours2">4 - 6 h.</label></div>
+      <div class="option"><input id="hours3" type="radio" name="hours" value="6-more"/><label for="hours3">More than 6 h.</label></div>
+      </div>
+      <div class="item">
+      <label id="checkbox-label">What pages do you visit regularly?</label>
+      <div class="option"><input type="checkbox" id="page0" value="google"/><label for="page0">Google</label></div>
+      <div class="option"><input type="checkbox" id="page1" value="youtube"/><label for="page1">Youtube</label></div>
+      <div class="option"><input type="checkbox" id="page2" value="elance"/><label for="page2">Elance</label></div>
+      <div class="option"><input type="checkbox" id="page3" value="wikipedia"/><label for="page3">Wikipedia</label></div>
+      </div>
+      <div class="item">
+      <label for="comments">Any comments or suggestions?</label>
+      <textarea id="comments" placeholder="Enter your comment here..." class="form-control"></textarea>
+      </div>
+     <div class="item" >
+      <input type="submit" id="submit" value="Submit" class="form-control"/>
+     </div>
+    </form>
+  </article>

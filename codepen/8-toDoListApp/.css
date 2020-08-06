@@ -1,0 +1,22 @@
+main {
+    width: 500px;
+    margin: auto;
+  }
+  h1 {
+    text-align: center;
+  }
+  #addDiv * {
+    float:left;
+  }
+  #addInput {
+    width: 82%;
+  }
+  #addButton {
+    width: 18%;
+  }
+  #list .item *{
+    display:inline-block;
+  }
+  #list .item div{
+    width:92%;
+  }
