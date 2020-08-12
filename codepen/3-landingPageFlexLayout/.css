@@ -1,0 +1,247 @@
+* {
+  margin:0px;
+}
+
+/***
+HEADER
+***/
+
+#header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 5px;
+  display:flex;
+}
+
+#img-div {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+}
+
+#img-div img{
+  max-width: 100%;
+  height: auto;
+}
+
+#title {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+}
+
+#nav-bar {
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+@media (max-width: 630px){
+  #header {
+    flex-direction: column;
+    align-items: center;
+  }
+  #img-div {
+    width: auto;
+  }
+  #nav-bar {
+    width: auto;
+  }
+  #title {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 920px) {
+  #nav-bar {
+    flex-direction: column;
+  }
+}
+
+
+/***
+MAIN
+***/
+
+/**
+Sections
+**/
+
+section{
+  padding-top:2vh;
+  padding-bottom:2vh;
+}
+
+section i {
+  display: block;
+  color: #ff5000;
+  font-weight: bolder;
+}
+
+p strong {
+  color: darkslateblue;
+}
+
+
+/**
+Section: BANNER
+**/
+
+#banner-img {
+  width: 100%;
+}
+
+/**
+Section: INFO
+**/
+
+#info div{
+  display: flex;
+  justify-content: center;
+}
+
+#video {
+  width: 80vw;
+  height: 40vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+@media (max-width: 630px){
+  #video {
+    width: 100vw;
+    height: 60vw;
+  }
+}
+
+/**
+Section: JUEGO
+**/
+
+#first-row{
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  padding-top:2vh;
+  padding-bottom:2vh;
+}
+
+#step1 {
+  background-color: #d1c9b1;
+  margin: 0.25em;
+  padding: 1em;
+}
+
+#second-row{
+  display:flex;
+  justify-content:center;
+}
+
+#step2 {
+  background-color: #a29e81;
+  color: white;
+  margin: 0.25em;
+  padding: 1em;
+}
+
+#step3 {
+  background-color: #88714e;
+  color: white;
+  margin: 0.25em;
+  padding: 1em;
+}
+
+/**
+Section: Descarga
+**/
+
+#descargaLink{
+  display:flex;
+  justify-content:center;
+  text-align:center;
+  padding-top:2vh;
+  padding-bottom:2vh;
+}
+
+#descargaLink img{
+  height: auto;
+  max-width: 60vw;
+}
+
+@media (max-width: 630px){
+  #descargaLink img{
+    height: auto;
+    max-width: 90vw;
+  }
+}
+
+
+/**
+Section: Creditos
+**/
+#creditosList{
+  padding-top:2vh;
+  padding-bottom:2vh;
+}
+
+#creditos div {
+  display:flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  text-align:center;
+}
+
+/**
+Section: Actualizaciones
+**/
+
+form {
+  width: 40vw;
+  margin: auto;
+  display:flex;
+  flex-direction:column;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+form input{
+  text-align:center;
+}
+
+#submit {
+  background-color: #a29e81;
+  color: white;
+}
+
+@media (max-width: 630px){
+  form{
+    width: 60vw;
+  }
+}
+
+@media (max-width: 400px){
+  form{
+    width: 90vw;
+  }
+}
+
+/***
+FOOTER
+***/
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 1em;
+}
