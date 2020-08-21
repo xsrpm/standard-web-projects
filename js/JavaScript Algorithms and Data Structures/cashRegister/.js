@@ -30,7 +30,9 @@ let map = new Map([
   ["PENNY",0.01]
 ]);
 
-
+//Version que emplea el uso de un multiplicador de ajuste para no perder precision en las operaiones con decimales.
+//Ya que solo se usarán 2 posiciones decimales se multiplicará por 100 y se manejará las operaciones 
+//matematicas como si fueran numeros enteros. Para imprimir se hará la division / 100 para obtener el valor verdadero.
 function checkCashRegister(price, cash, cid) {
   const AJUSTE = 100;
   let rest = (cash*AJUSTE) - (price*AJUSTE);
@@ -73,6 +75,52 @@ function checkCashRegister(price, cash, cid) {
   console.log(objRes);
   return objRes;
 }
+
+//Versión que emplea el uso de conversiones a Number y .toFixed(2) -> String para no perder precicion 
+//en las operaciones matematicas sucesivas con numeros con parte decimal
+function checkCashRegisterV2(price, cash, cid) {
+  const AJUSTE = 1;
+  let rest = (cash - price).toFixed(2);
+  let change = [];
+  let cant = 0;
+  let denominacionNumber;
+  let open=false;
+
+  const cidr = [...cid].reverse();
+  for( let denominacion of cidr){
+    cant=0;
+    denominacionNumber = map.get(denominacion[0]);
+    while( rest > 0 && (denominacionNumber <= rest - cant) && denominacion[1] - cant> 0){
+      cant = (Number(cant) + denominacionNumber).toFixed(2);
+    }
+    if( cant > 0){
+      change.push([denominacion[0],Number(cant)]);
+      rest = (Number(rest) -Number(cant)).toFixed(2);
+    }
+    if(denominacion[1] - cant > 0)
+      open=true;
+  }
+
+  let objRes = {};
+  if(rest > 0){
+    objRes.status = "INSUFFICIENT_FUNDS";
+    objRes.change = [];
+  }
+  else{
+    if(open){
+      objRes.status = "OPEN";
+      objRes.change= change;
+    }
+    else{
+      objRes.status = "CLOSED";
+      objRes.change = cid;
+    }
+  }
+
+  console.log(objRes);
+  return objRes;
+}
+
 
 let tests = [
   {
