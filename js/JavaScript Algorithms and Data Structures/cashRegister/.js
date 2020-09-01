@@ -79,7 +79,6 @@ function checkCashRegister(price, cash, cid) {
 //Versión que emplea el uso de conversiones a Number y .toFixed(2) -> String para no perder precicion 
 //en las operaciones matematicas sucesivas con numeros con parte decimal
 function checkCashRegisterV2(price, cash, cid) {
-  const AJUSTE = 1;
   let rest = (cash - price).toFixed(2);
   let change = [];
   let cant = 0;
