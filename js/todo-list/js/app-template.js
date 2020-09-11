@@ -1,13 +1,14 @@
 /**
- * Version mejorada a la de app.js, usando html templates
- * 
+ * Version mejorada a la de app.js, usando:
+ * - html templates
+ * - event propagation (mejora)
  */
 
 (function(){
     const itemForm = document.getElementById("itemForm");
     const itemInput = document.getElementById("itemInput");
     const clearList = document.getElementById("clear-list");
-    const itemList = document.getElementsByClassName("item-list my-5")[0];
+    const itemList = document.querySelector(".item-list");
     const itemTemplate = document.getElementById("itemTemplate");
     let arrData;
     function listStorage(){
@@ -31,23 +32,25 @@
         itemDOM.querySelector('.item-name').innerText=item.value;
         item.completed?itemDOM.querySelector('.item-name').classList.toggle("completed"):"";
         item.completed?itemDOM.querySelector('.complete-item').classList.toggle("visibility"):"";
-        itemDOM.querySelector('.complete-item').addEventListener("click",(e)=>{
-            itemDOM.querySelector('.complete-item').classList.toggle("visibility");
-            itemDOM.querySelector('.item-name').classList.toggle("completed");
-            saveItemsToLocalStorage();
-        });      
-        itemDOM.querySelector('.edit-item').addEventListener("click",(e)=>{
-            itemInput.value= item.value;
-            itemDOM.remove();
-            saveItemsToLocalStorage();
-        });   
-        itemDOM.querySelector('.delete-item').addEventListener("click",(e)=>{
-            itemDOM.remove();
-            saveItemsToLocalStorage();
-        });
         itemList.appendChild(itemDOM);
     }
 
+    itemList.addEventListener("click",(e)=>{
+        if(e.target.parentElement.classList.contains("complete-item")){
+            e.target.parentElement.classList.toggle("visibility");
+            e.target.parentElement.parentElement.previousElementSibling.classList.toggle("completed");
+            saveItemsToLocalStorage();
+        }
+        if(e.target.parentElement.classList.contains("edit-item")){
+            itemInput.value= e.target.parentElement.parentElement.previousElementSibling.innerText;
+            itemList.removeChild(e.target.parentElement.parentElement.parentElement);
+            saveItemsToLocalStorage();
+        }
+        if(e.target.parentElement.classList.contains("delete-item")){
+            itemList.removeChild(e.target.parentElement.parentElement.parentElement);
+            saveItemsToLocalStorage();
+        }
+    });
     itemForm.addEventListener("submit",(e)=>{
         e.preventDefault();
         arrData.push({value:itemInput.value,completed:false});
@@ -60,12 +63,3 @@
         localStorage.setItem('data', JSON.stringify([]));
     });
 })()
-
-
-/*
-Notas:
-
-Usar itemList.innerHTML+=ItemString(itemInput.value);  al agregar un item al todo-list
-Recrea todo el DOM cada vez y se pierde la referencia a los eventos creados a estos en subsiguientes ingresos de items a la lista
-
-*/
