@@ -18,7 +18,7 @@
         });
     }
     listStorage();
-    function saveItemstoLocalStorage(){
+    function saveItemsToLocalStorage(){
         arrData = [];
         const itemName = document.getElementsByClassName("item-name");
         Array.from(itemName).forEach((ele)=>{
@@ -27,40 +27,25 @@
         localStorage.setItem('data', JSON.stringify(arrData));
     }
     function addItem(item){
-        const itemmy3 = itemTemplate.content.cloneNode(true).firstElementChild;
-        itemmy3.children[0].innerText=item.value;
-        if(item.completed){
-            itemmy3.children[0].classList.add("completed");
-            itemmy3.children[1].children[0].classList.add("visibility");
-        }
-        itemmy3.children[1].children[0].addEventListener("click",(e)=>{
-            let anchor=e.target;
-            while(anchor.tagName!=="A"){
-                anchor=anchor.parentElement;
-            }
-            console.log(anchor);
-            anchor.classList.toggle("visibility");
-            anchor.parentElement.previousElementSibling.classList.toggle("completed");
-            saveItemstoLocalStorage();
+        const itemDOM = itemTemplate.content.cloneNode(true).firstElementChild;
+        itemDOM.querySelector('.item-name').innerText=item.value;
+        item.completed?itemDOM.querySelector('.item-name').classList.toggle("completed"):"";
+        item.completed?itemDOM.querySelector('.complete-item').classList.toggle("visibility"):"";
+        itemDOM.querySelector('.complete-item').addEventListener("click",(e)=>{
+            itemDOM.querySelector('.complete-item').classList.toggle("visibility");
+            itemDOM.querySelector('.item-name').classList.toggle("completed");
+            saveItemsToLocalStorage();
         });      
-        itemmy3.children[1].children[1].addEventListener("click",(e)=>{
-            let anchor=e.target;
-            while(anchor.tagName!=="A"){
-                anchor=anchor.parentElement;
-            }
-            itemInput.value= anchor.parentElement.previousElementSibling.innerText;
-            anchor.parentElement.parentElement.remove();
-            saveItemstoLocalStorage();
+        itemDOM.querySelector('.edit-item').addEventListener("click",(e)=>{
+            itemInput.value= item.value;
+            itemDOM.remove();
+            saveItemsToLocalStorage();
         });   
-        itemmy3.children[1].children[2].addEventListener("click",(e)=>{
-            let anchor=e.target;
-            while(anchor.tagName!=="A"){
-                anchor=anchor.parentElement;
-            }
-            anchor.parentElement.parentElement.remove();
-            saveItemstoLocalStorage();
+        itemDOM.querySelector('.delete-item').addEventListener("click",(e)=>{
+            itemDOM.remove();
+            saveItemsToLocalStorage();
         });
-        itemList.appendChild(itemmy3);
+        itemList.appendChild(itemDOM);
     }
 
     itemForm.addEventListener("submit",(e)=>{
@@ -84,21 +69,3 @@ Usar itemList.innerHTML+=ItemString(itemInput.value);  al agregar un item al tod
 Recrea todo el DOM cada vez y se pierde la referencia a los eventos creados a estos en subsiguientes ingresos de items a la lista
 
 */
-
-//polifill para remove() en IE explorer browsers 
-// from:https://github.com/jserz/js_piece/blob/master/DOM/ChildNode/remove()/remove().md
-(function (arr) {
-    arr.forEach(function (item) {
-      if (item.hasOwnProperty('remove')) {
-        return;
-      }
-      Object.defineProperty(item, 'remove', {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        value: function remove() {
-          this.parentNode.removeChild(this);
-        }
-      });
-    });
-  })([Element.prototype, CharacterData.prototype, DocumentType.prototype]);
