@@ -2,3 +2,4 @@
 - MouseEnter Event
 - querySelectorAll
 - NodeList vs HTMLCollection
+- removeEventListener
