@@ -10,11 +10,19 @@ The unique numbers should be sorted by their original order, but the final array
 Check the assertion tests for examples.
 */
 
-function uniteUnique(arr) {
-  return arr;
+function uniteUnique() {
+  let arr=[]
+  console.log(arguments.length)
+  for(let a of arguments){
+    for(let e of a){
+      !(e in arr)? arr.push(e):""
+    }
+  }
+  return arr
 }
 
-uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]))
+
 
 
 /*
