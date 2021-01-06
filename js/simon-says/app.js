@@ -104,13 +104,13 @@ class Juego {
   }
 
   ganoElJuego() {
-    swal("Platzi", "Felicitacions, ganaste el juego!", "success").then(() =>
+    swal("Simon says", "Felicitaciones, ganaste el juego!", "success").then(() =>
         btnEmpezar.classList.toggle("hide")
     );
   }
 
   perdioElJuego() {
-    swal("Platzi", "Lo lamentamos, perdiste :(", "error").then(() => {
+    swal("Simon says", "Lo lamentamos, perdiste :(", "error").then(() => {
       this.eliminarEventosClick();
       btnEmpezar.classList.toggle("hide")
     });
