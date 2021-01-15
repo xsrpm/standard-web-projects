@@ -78,6 +78,16 @@ p strong {
 }
 
 /**
+Section: text
+*/
+
+#text{
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+
+/**
 Section: BANNER
 **/
 
@@ -173,15 +183,13 @@ Section: Creditos
 **/
 
 #creditosList{
-  padding-top:2vh;
-  padding-bottom:2vh;
-}
-
-#creditos div {
   display:grid;
-  grid-template-columns: repeat(auto-fill,120px);
+  justify-items:center;
+  grid-template-columns: repeat(auto-fit,120px);
   justify-content: center;
   text-align:center;
+  padding-top:2vh;
+  padding-bottom:2vh;
 }
 
 /**
@@ -211,11 +219,7 @@ form input{
   }
 }
 
-@media (max-width: 400px){
-  form{
-    width: 90vw;
-  }
-}
+
 
 /***
 FOOTER
