@@ -1,6 +1,0 @@
-
-# Privilegios para `nov06ist`@`localhost`
-
-GRANT USAGE ON *.* TO 'nov06ist'@'localhost' IDENTIFIED BY PASSWORD '*29B21B004BA7CE47C041A184FFCAF2CBD180DB00';
-
-GRANT ALL PRIVILEGES ON `nov06ist\_%`.* TO 'nov06ist'@'localhost';
