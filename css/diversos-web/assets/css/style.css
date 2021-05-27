@@ -1,0 +1,61 @@
+.logo-web{
+    width: 8vw;
+    min-width: 70px;
+}
+
+.user-icon{
+    display: inline;
+    color: white;
+    padding: 1%;
+}
+
+.navbar-ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin: unset;
+    margin-top: unset;
+    padding-inline-start: 0px;
+}
+
+.navbar-li-left{
+    float: left;
+    padding: 10px 10px;
+}
+
+.navbar-li-right{
+    float: right;
+    padding: 10px 10px;
+}
+
+.presentacion{
+    text-align: center;
+}
+
+.img-presentacion{
+    width: 100%;
+}
+
+.div-presentacion{
+    background-color: #2f3135;
+}
+
+.cabecera-seccion{
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-top: 3px double rgb(51, 51, 51);
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    background: #fff;
+    content: attr(data-title);
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}

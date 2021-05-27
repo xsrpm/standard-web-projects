@@ -1,4 +1,4 @@
-class PantallaDemo extends HTMLElement{
+export class PantallaDemo extends HTMLElement{
     constructor(){
         super()
         this.attachShadow({mode:"open"})
