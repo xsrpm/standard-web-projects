@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Platzi Video</title>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="header__logo"
+        src="./assets/logo-platzi-video-BW2.png"
+        alt="logo platzi video"
+      />
+
+      <!-- Menú con details summary position absolute -->
+
+      <details class="header__menu" open>
+        <summary class="header__perfil">
+          <img
+            class="header__perfil--img"
+            src="./assets/user-icon.png"
+            alt="Foto Perfil"
+          />
+          <p>Perfil</p>
+        </summary>
+        <nav class="header__nav">
+          <a class="header__nav--item" href="">Cuenta</a>
+          <a class="header__nav--item" href="">Cerrar Sesión</a>
+        </nav>
+      </details>
+
+      <!-- Menú con nav a position relative-absolute -->
+      <!--
+      <section class="header__menu">
+        <div class="header__perfil">
+          <img
+            class="header__perfil--img"
+            src="./assets/user-icon.png"
+            alt="logo de menu"
+          />
+          <span class="header__perfil--title">Perfil</span>
+        </div>
+        <nav class="header__nav">
+          <a class="header__nav--item" href="">Cuenta</a>
+          <a class="header__nav--item" href="">Cerrar Sesión</a>
+        </nav>
+      </section>
+      -->
+    </header>
+    <main>
+      <section class="search">
+        <h1 class="search__title">¿Qué quieres ver hoy?</h1>
+        <input type="text" class="search__input" placeholder="Buscar..." />
+      </section>
+      <section class="category">
+        <h1>Mi lista</h1>
+        <section class="category__list">
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/6771524/pexels-photo-6771524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/6976193/pexels-photo-6976193.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/5861734/pexels-photo-5861734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/6399486/pexels-photo-6399486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/5109669/pexels-photo-5109669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/3913589/pexels-photo-3913589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/3819644/pexels-photo-3819644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/6771524/pexels-photo-6771524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/6771524/pexels-photo-6771524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/6771524/pexels-photo-6771524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+        </section>
+      </section>
+      <section class="category">
+        <h1>Tendencias</h1>
+        <section class="category__list">
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/6771524/pexels-photo-6771524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/6976193/pexels-photo-6976193.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/5861734/pexels-photo-5861734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/6399486/pexels-photo-6399486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/5109669/pexels-photo-5109669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/3913589/pexels-photo-3913589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/3819644/pexels-photo-3819644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/6771524/pexels-photo-6771524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/6771524/pexels-photo-6771524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/6771524/pexels-photo-6771524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+        </section>
+      </section>
+      <section class="category">
+        <h1>Originales de PlatziVideo</h1>
+        <section class="category__list">
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/6771524/pexels-photo-6771524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/6976193/pexels-photo-6976193.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/5861734/pexels-photo-5861734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/6399486/pexels-photo-6399486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/5109669/pexels-photo-5109669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/3913589/pexels-photo-3913589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/3819644/pexels-photo-3819644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/6771524/pexels-photo-6771524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/6771524/pexels-photo-6771524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+          <section class="category-item">
+            <img
+              class="category-item__img"
+              src="https://images.pexels.com/photos/6771524/pexels-photo-6771524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="People"
+            />
+            <div class="category-item__details">
+              <div>
+                <img src="./assets/play-icon.png" alt="Play" />
+                <img src="./assets/plus-icon.png" alt="Plus" />
+              </div>
+              <p class="category-item__details--title">Título descriptivo</p>
+              <p class="category-item__details--subtitle">
+                2019 16+ 23 minutos
+              </p>
+            </div>
+          </section>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <a href="#">Terminos de uso</a><a href="#">Declaración de privacidad</a
+        ><a href="#">Centro de ayuda</a>
+      </nav>
+    </footer>
+    <script>
+      const menu = document.querySelector(".header__menu");
+      menu.addEventListener("click", (e) => {
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>

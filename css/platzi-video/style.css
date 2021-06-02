@@ -1,0 +1,290 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: content-box;
+  /* outline: 1px solid red; */
+}
+body {
+  background-color: #8f57fd;
+  font-family: "Muli", sans-serif;
+  overflow-x: hidden;
+}
+
+/* --- HEADER ---*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.8rem;
+  color: white;
+}
+.header__logo {
+  width: 12.5rem;
+}
+
+/* Menú con details summary position absolute */
+
+.header__menu {
+  color: #eee;
+}
+
+.header__menu:hover .header__nav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 1.8rem;
+}
+
+.header__perfil {
+  display: flex;
+  cursor: pointer;
+  outline-style: none;
+  align-items: center;
+}
+.header__perfil--img {
+  width: 2.5rem;
+  padding-right: 0.5rem;
+}
+
+.header__perfil--img::-webkit-details-marker {
+  display: none;
+}
+
+/* Menú con nav a position relative-absolute*/
+/*
+.header__menu {
+  position: relative;
+  color: #eee;
+}
+.header__menu:hover .header__nav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+}
+.header__perfil {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  color: white;
+  width: 100px;
+  justify-content: flex-end;
+}
+.header__perfil--img {
+  padding-right: 0.5rem;
+  width: 2.5rem;
+}
+*/
+
+/* ---- Comun */
+.header__nav {
+  display: none;
+  padding-top: 0.5rem;
+}
+.header__nav--item {
+  text-decoration: none;
+  color: white;
+  text-align: right;
+  padding-top: 0.5rem;
+}
+.header__nav--item:hover {
+  text-decoration: underline;
+}
+
+/*---- FIN HEADER */
+
+/*--- SEARCH ---*/
+.search {
+  text-align: center;
+  margin: 6rem 4rem;
+}
+
+.search > * {
+  padding-bottom: 1.2rem;
+}
+
+.search__title {
+  color: white;
+}
+
+.search__input {
+  border-radius: 2rem;
+  padding: 0.75rem 1.2rem;
+  width: 70vw;
+  background-color: transparent;
+  border-color: white;
+  border-style: double;
+  color: white;
+  font-family: "Muli", sans-serif;
+  font-size: 1rem;
+  background-color: #9a68fd;
+  outline: none;
+}
+.search__input::placeholder {
+  color: white;
+}
+
+/*---- FIN SEARCH ---*/
+
+/*1.- Width del 100% para que abarque toda la pantalla.
+      2.- Con overflow establecemos la propiedad de scroll
+      3.- padding del 30% para tener un margen de vista
+      4.- Pos:Relative porque queremos que los elementos que hereden se ajusten con base en este elemento*/
+
+/** CATEGORIES **/
+
+.category {
+  white-space: nowrap;
+  margin: 2rem 0;
+  /* padding-bottom: 0.8rem; */
+}
+
+.category > h1 {
+  color: white;
+  font-size: 1rem;
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* 1.- WhiteSpace nowrap Enlista todos los elementos en un solo renglón.
+       2.- Establecemmos un pequeño espaciado entre los elementos de la lista.
+       3.- Padding de 10px para evitar que se nos corte el elemento cuando hagamos hover
+       4.-
+       5.-*/
+
+.category__list {
+  width: 100%;
+  overflow: scroll;
+  padding: 2rem;
+  position: relative;
+}
+
+/* 1-3 Color, altura, anchura.
+   4.- Qué tan curvo queremos nuestro borde
+   5.- Overflow: Hidden Para que tome los estilos
+   6.- Margin 10px separación entre elementos
+   7.-InLineBlock: Un item al lado del otro
+   8.-Cambia el icono del mouse cuando selecciona el elemento
+   9.-Suaviza la transcisión para que se vea agradable
+   10.- Ajusta los elementos para que no se salgan y empiecen de izq a derecha
+
+*/
+
+.category-item {
+  background-color: #369b68;
+  width: 12.5rem;
+  height: 15.625rem;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  margin-right: 0.8rem;
+  display: inline-block;
+  cursor: pointer;
+  transition: 450ms;
+  transform-origin: center left;
+  position: relative;
+}
+
+/*
+        Carousel hover.
+        1.- Desplaza los elemenots hacia la derecha
+        2.- ~ Selecciona todos los elementos excepto el elemento que está seleccionado
+        3.-
+    */
+
+.category-item:hover ~ .category-item {
+  transform: translate3d(3rem, 0, 0);
+}
+
+/*
+        1.- Opacidad
+    */
+
+.category__list:hover .category-item {
+  opacity: 0.3;
+}
+
+/*
+        1.- Escala en 1.5 la imagen seleccionada
+        2.- Cuando se le haga hover a un elemento especīfico, pone la opacidad en 1.
+    */
+
+.category__list:hover .category-item:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/*
+Para aquellos que se les muestra la barra de scroll en la sección de mi lista, les comparto el estilo que le di para que se vea un poco mejor con el aspecto/diseño general de la página.
+*/
+
+.category::scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.category::scrollbar {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+/*
+fin scrollbar
+*/
+
+.category-item__img {
+  width: 12.5rem;
+  height: 15.625rem;
+  object-fit: cover;
+}
+
+.category-item__details {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  font-size: 0.625rem;
+  opacity: 0;
+  transition: 450ms opacity;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.category-item__details:hover {
+  opacity: 1;
+}
+
+.category-item__details > div > img {
+  width: 1.5rem;
+}
+
+.category-item__details p {
+  color: white;
+}
+
+.category-item__details--title {
+  font-size: 0.9rem;
+}
+
+/** FIN CATEGORIES **/
+
+/** FOOTER **/
+footer {
+  margin: 2.5rem 1rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
