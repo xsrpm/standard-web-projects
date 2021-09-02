@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Repository URL](https://github.com/xsrpm/standard-web-projects/tree/master/css/order-summary-component)
-- Live Site URL: [Live Site URL](https://xsrpm.github.io/standard-web-projects/css/order-summary-component/)
+- [Repository URL](https://github.com/xsrpm/standard-web-projects/tree/master/css/order-summary-component)
+- [Live Site URL](https://xsrpm.github.io/standard-web-projects/css/order-summary-component/)
 
 ## My process
 
