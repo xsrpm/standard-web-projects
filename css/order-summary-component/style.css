@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px dashed red; */
+}
+
+:root {
+  /* primary*/
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  /* Neutral */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+  display: flex;
+  background: url(./images/pattern-background-mobile.svg) no-repeat fixed;
+  background-color: var(--pale-blue);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: row;
+}
+
+article.card {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 87%;
+  max-width: 450px;
+  border-radius: 1rem;
+}
+
+.header-card > img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 1rem 1rem 0% 0%;
+}
+
+article.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 80%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.plans {
+  display: flex;
+  background-color: var(--very-pale-blue);
+  align-items: center;
+  margin-block-start: 0.8rem;
+  margin-block-end: 0.8rem;
+  padding: 0.8rem;
+  flex-direction: row;
+  width: 100%;
+  border-radius: 0.7rem;
+  justify-content: space-between;
+}
+
+.plan {
+  display: flex;
+  flex-direction: row;
+  width: 58%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.plan-img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.plan-content {
+  padding-left: 1rem;
+}
+
+.plan-title {
+  font-weight: 900;
+  font-size: small;
+}
+
+.plan-price {
+  font-weight: 400;
+  color: hsl(224, 23%, 55%);
+  font-size: small;
+}
+
+.primary-button {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  width: 100%;
+  text-align: center;
+  border-radius: 0.8rem;
+  padding: 0.8rem;
+  font-weight: 700;
+  box-shadow: 0px 10px 7px 5px rgb(56 41 224 / 7%);
+}
+.primary-button:hover {
+  background-color: #766cf1;
+}
+.secondary-button {
+  color: var(--desaturated-blue);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  padding: 0.8rem;
+}
+.secondary-button:hover {
+  color: var(--dark-blue);
+}
+.change-button {
+  color: hsl(245, 75%, 52%);
+  font-size: x-small;
+  font-weight: 700;
+}
+.change-button:hover {
+  text-decoration: none;
+  color: #978ee7;
+}
+
+.content-title {
+  font-weight: 900;
+  margin-block-end: 0.8rem;
+  text-align: center;
+}
+.description {
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  font-size: 0.85rem;
+}
+
+@media screen and (min-width: 375px) {
+  main {
+    background: url(./images/pattern-background-desktop.svg) repeat-x fixed;
+    background-color: var(--pale-blue);
+  }
+}
