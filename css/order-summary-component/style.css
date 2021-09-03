@@ -25,11 +25,11 @@ main {
   background-color: var(--pale-blue);
   justify-content: center;
   align-items: center;
-  height: 100vh;
   flex-direction: row;
+  height: 100vh;
 }
 
-article.card {
+.card {
   display: flex;
   background-color: white;
   flex-direction: column;
@@ -48,7 +48,7 @@ article.card {
   border-radius: 1rem 1rem 0% 0%;
 }
 
-article.content {
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
