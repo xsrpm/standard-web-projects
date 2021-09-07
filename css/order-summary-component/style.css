@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* outline: 1px dashed red; */
+  outline: 1px dashed red;
 }
 
 :root {
@@ -17,16 +17,16 @@
 
 body {
   font-family: 'Red Hat Display', sans-serif;
+  background: url(./images/pattern-background-mobile.svg) no-repeat fixed;
+  background-color: var(--pale-blue);
 }
 
 main {
   display: flex;
-  background: url(./images/pattern-background-mobile.svg) no-repeat fixed;
-  background-color: var(--pale-blue);
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  height: 100vh;
+  flex-direction: column;
+  position: relative;
 }
 
 .card {
@@ -39,6 +39,12 @@ main {
   width: 87%;
   max-width: 450px;
   border-radius: 1rem;
+  margin: 4.6rem 0rem 3.1rem 0;
+  /* max-height: 33rem; */
+}
+
+.header-card {
+  display: flex;
 }
 
 .header-card > img {
@@ -53,7 +59,7 @@ main {
   flex-direction: column;
   align-items: center;
   background-color: white;
-  width: 80%;
+  width: 73%;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -61,9 +67,9 @@ main {
   display: flex;
   background-color: var(--very-pale-blue);
   align-items: center;
-  margin-block-start: 1.8rem;
-  margin-block-end: 1.8rem;
-  padding: 1rem;
+  margin-block-start: 1.5rem;
+  margin-block-end: 1.5rem;
+  padding: 0.8rem;
   flex-direction: row;
   width: 100%;
   border-radius: 0.7rem;
@@ -73,17 +79,17 @@ main {
 .plan {
   display: flex;
   flex-direction: row;
-  /* width: 70%; */
   align-items: center;
 }
 
 .plan-img {
   width: 3rem;
   height: 3rem;
-  margin: 0.5rem;
 }
 
-.plan-content {padding-left: 0.5rem;}
+.plan-content {
+  padding-left: 0.5rem;
+}
 
 .plan-title {
   font-weight: 900;
@@ -94,6 +100,7 @@ main {
   font-weight: 400;
   color: hsl(224, 23%, 55%);
   font-size: medium;
+  padding: 0.3rem 0 0 0;
 }
 
 .primary-button {
@@ -106,7 +113,7 @@ main {
   padding: 0.8rem;
   font-weight: 700;
   box-shadow: 0px 10px 7px 5px rgb(56 41 224 / 7%);
-  font-size: smaller;
+  font-size: 0.7rem;
 }
 .primary-button:hover {
   background-color: #766cf1;
@@ -118,8 +125,8 @@ main {
   width: 100%;
   text-align: center;
   padding: 0.8rem;
-  margin-top: 1rem;
-  font-size: smaller;
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
 }
 .secondary-button:hover {
   color: var(--dark-blue);
@@ -136,19 +143,55 @@ main {
 
 .content-title {
   font-weight: 900;
-  margin-block-end: 0.9rem;
+  margin-block-end: 0.4rem;
   text-align: center;
-  font-size: 1.75rem;
+  font-size: 1.45rem;
   color: var(--dark-blue);
 }
 .description {
   text-align: center;
   color: hsl(224, 23%, 55%);
+  line-height: 1.6rem;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 1440px) {
   main {
     background: url(./images/pattern-background-desktop.svg) repeat-x fixed;
     background-color: var(--pale-blue);
+  }
+  .card {
+    margin: 6.4rem 0 6.4rem 0;
+  }
+  .content {
+    margin: 3.25rem 0 3.25rem 0;
+  }
+  .content-title {
+    margin-block-end: 0;
+  }
+  .plans {
+    margin-block-start: 0;
+    padding: 1.565rem;
+    margin-block-end: 0;
+  }
+  .description {
+    margin: 1.38rem;
+    line-height: 1.5rem;
+  }
+  .plan {
+  }
+  .plan-img {
+  }
+  .plan-content {
+    padding-left: 1.25rem;
+  }
+  .change-button {
+    font-size: 0.67rem;
+  }
+  .primary-button {
+    margin: 2.3rem 0 2.3rem 0;
+  }
+  .secondary-button {
+    margin-top: 0;
+    padding: 0;
   }
 }
