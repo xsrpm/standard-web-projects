@@ -1,0 +1,123 @@
+:root {
+  --veryDarkBlue: hsl(233, 47%, 7%);
+  --darkDesaturatedBlue: hsl(244, 38%, 16%);
+  --softViolet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --slightlyTransparentWhiteParagraph: hsla(0, 0%, 100%, 0.75);
+  --slightlyTransparentWhiteHeadings: hsla(0, 0%, 100%, 0.6);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: 1px dashed red; */
+}
+
+html {
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--veryDarkBlue);
+  color: var(--white);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--veryDarkBlue);
+}
+
+.Card {
+  display: flex;
+  margin: 6rem 2.3rem;
+  flex-direction: column;
+}
+.Card__header {
+  display: flex;
+  border-radius: 1rem 1rem 0 0;
+  background-color: var(--softViolet);
+}
+
+.Card__header img {
+  width: 100%;
+  opacity: 0.5;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.Card__content {
+  text-align: center;
+  padding: 1rem 1rem;
+  background-color: var(--darkDesaturatedBlue);
+  border-radius: 0 0 1rem 1rem;
+}
+.Card__content-header {
+  margin: 1rem 0;
+}
+
+.Card__content-header h2 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.Card__content-header p {
+  color: var(--slightlyTransparentWhiteParagraph);
+  margin-top: 1.2rem;
+}
+.Card--bold {
+  color: var(--softViolet);
+}
+.Card__stats {
+  display: flex;
+  margin: 0 1rem;
+  flex-direction: column;
+}
+.Card__stat {
+  margin: 1.5rem 0;
+}
+.Card__stat h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.Card__stat p {
+  color: var(--slightlyTransparentWhiteHeadings);
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+}
+
+@media screen and (min-width: 1275px) {
+  .Card {
+    flex-direction: row-reverse;
+    margin: 11.18rem 10.62rem;
+  }
+  .Card__header {
+    border-radius: 0 1rem 1rem 0;
+  }
+  .Card__header img {
+    border-radius: 0 1rem 1rem 0;
+  }
+  .Card__content {
+    border-radius: 1rem 0 0 1rem;
+    padding: 4rem 4rem 4rem 4rem;
+    max-width: 50%;
+  }
+  .Card__content-header {
+  }
+  .Card__content-header h2 {
+    font-size: 2.8rem;
+    text-align: left;
+  }
+  .Card__content-header p {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  .Card__stats {
+    flex-direction: row;
+    margin: 0;
+    text-align: left;
+    justify-content: left;
+  }
+  .Card__stat {
+    padding-right: 5.5rem;
+  }
+}
