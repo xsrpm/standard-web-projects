@@ -37,7 +37,7 @@ main {
 .Card__header {
   display: flex;
   border-radius: 1rem 1rem 0 0;
-  background-color: var(--softViolet);
+  background-color: hsl(277deg 88% 31%);
 }
 
 .Card__header img {
@@ -48,7 +48,7 @@ main {
 
 .Card__content {
   text-align: center;
-  padding: 1rem 1rem;
+  padding: 1rem 1.6rem;
   background-color: var(--darkDesaturatedBlue);
   border-radius: 0 0 1rem 1rem;
 }
@@ -56,9 +56,9 @@ main {
   margin: 1rem 0;
 }
 
-.Card__content-header h2 {
+.Card__content-header h1 {
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 .Card__content-header p {
   color: var(--slightlyTransparentWhiteParagraph);
@@ -75,7 +75,7 @@ main {
 .Card__stat {
   margin: 1.5rem 0;
 }
-.Card__stat h3 {
+.Card__stat h2 {
   font-size: 1.5rem;
   text-transform: uppercase;
 }
@@ -98,18 +98,20 @@ main {
   }
   .Card__content {
     border-radius: 1rem 0 0 1rem;
-    padding: 4rem 4rem 4rem 4rem;
+    padding: 4rem 4rem 0rem 4rem;
     max-width: 50%;
   }
   .Card__content-header {
+    margin: 0 0;
   }
-  .Card__content-header h2 {
-    font-size: 2.8rem;
+  .Card__content-header h1 {
+    font-size: 2.3rem;
     text-align: left;
   }
   .Card__content-header p {
     font-size: 1.2rem;
     text-align: left;
+    margin-top: 1.5rem;
   }
   .Card__stats {
     flex-direction: row;
@@ -119,5 +121,6 @@ main {
   }
   .Card__stat {
     padding-right: 5.5rem;
+    margin: 4rem 0;
   }
 }
