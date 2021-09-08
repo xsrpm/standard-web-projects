@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px dashed red; */
+}
+
+:root {
+  /* primary*/
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+  /* Neutral */
+  --transparentWhite: hsla(0, 0%, 100%, 0.75);
+  --veryLightGray: hsl(0, 0%, 95%);
+}
+
+body {
+  background-color: var(--veryLightGray);
+}
+
+.Card {
+  display: flex;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  color: var(--veryLightGray);
+  flex-direction: column;
+  margin: 5.5rem 1.5rem 5.3rem 1.5rem;
+}
+.Card h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: 2.5rem;
+}
+.Card article {
+  /* display: flex; */
+  padding: 2.94rem;
+  /* flex-direction: column; */
+}
+.Card__first-column {
+  background-color: var(--brightOrange);
+}
+.Card__second-column {
+  background-color: var(--darkCyan);
+}
+.Card__third-column {
+  background-color: var(--veryDarkCyan);
+}
+.Card__first-column a {
+  color: var(--brightOrange);
+}
+.Card__second-column a {
+  color: var(--darkCyan);
+}
+.Card__third-column a {
+  color: var(--veryDarkCyan);
+}
+.Card p {
+  color: var(--transparentWhite);
+  line-height: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+.Card a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--veryLightGray);
+  padding: 1.1rem 2.1rem;
+  border-radius: 1.5rem;
+  font-size: small;
+  /* margin: 2px 0; */
+}
+.Card a:hover {
+  background-color: transparent;
+  color: var(--veryLightGray);
+  border: 0.1rem solid var(--veryLightGray);
+  padding: 1rem 2rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .Card {
+    margin: 10.7rem 16.3rem 10.7rem 16.3rem;
+    flex-direction: row;
+  }
+  .Card a {
+    padding: 0.9rem 1.9rem;
+  }
+  .Card a:hover {
+    padding: 0.7rem 1.7rem;
+  }
+}
