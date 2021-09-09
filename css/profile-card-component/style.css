@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px dashed red; */
+}
+
+:root {
+  /* primary*/
+  --darkCyan: hsl(185, 75%, 39%);
+  --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --darkGrayishBlue: hsl(227, 10%, 46%);
+  /* Neutral */
+  --darkGray: hsl(0, 0%, 59%);
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: var(--darkCyan);
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top -300px left -350px, bottom -300px right -350px;
+  background-size: 150%, 150%;
+  /* margin: 100px; */
+}
+
+.card {
+  margin: 9.126rem 1.6rem 8.5rem 1.6rem;
+  text-align: center;
+}
+
+.card header {
+  position: relative;
+  background-image: url(./images/bg-pattern-card.svg);
+  height: 8.75rem;
+  border-radius: 0.9rem 0.9em 0 0;
+}
+.card header img {
+  position: relative;
+  border-radius: 50%;
+  border: 0.3rem white solid;
+  top: 5.5rem;
+}
+
+.card article {
+  background-color: white;
+  border-radius: 0 0 0.9rem 0.9rem;
+  height: 14.5rem;
+}
+
+.card article h2 {
+  padding-top: 4.63rem;
+  padding-bottom: 0.75rem;
+  font-size: 18px;
+  color: var(--veryDarkDesaturatedBlue);
+}
+.card article h2 span {
+  color: var(--darkGray);
+}
+
+.card > article > p {
+  font-size: small;
+  color: var(--darkGray);
+}
+.card article hr {
+  margin-top: 1.63rem;
+  margin-bottom: 1.63rem;
+  background-color: var(--darkGray);
+  opacity: 0.4;
+}
+
+.card__stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+
+.card__stat {
+}
+
+.card__stat h3 {
+  font-size: 18px;
+  color: var(--veryDarkDesaturatedBlue);
+}
+.card__stat p {
+  font-size: small;
+  color: var(--darkGrayishBlue);
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-size: 75%, 75%;
+    background-position: top -600px left -400px, bottom -700px right -400px;
+  }
+  .card {
+    margin: 10.4rem 30rem 10.4rem 30rem;
+  }
+}
