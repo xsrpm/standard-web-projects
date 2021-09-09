@@ -40,12 +40,14 @@ body {
 }
 .Card__first-column {
   background-color: var(--brightOrange);
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 .Card__second-column {
   background-color: var(--darkCyan);
 }
 .Card__third-column {
   background-color: var(--veryDarkCyan);
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 .Card__first-column a {
   color: var(--brightOrange);
@@ -88,5 +90,11 @@ body {
   }
   .Card a:hover {
     padding: 0.7rem 1.7rem;
+  }
+  .Card__first-column {
+  border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .Card__third-column {
+  border-radius: 0 0.5rem 0.5rem 0;
   }
 }
