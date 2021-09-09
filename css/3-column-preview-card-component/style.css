@@ -15,17 +15,28 @@
   --veryLightGray: hsl(0, 0%, 95%);
 }
 
+html {
+  font-size: 15px;
+}
+
 body {
   background-color: var(--veryLightGray);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 99rem;
 }
 
 .Card {
   display: flex;
   font-family: 'Lexend Deca', sans-serif;
-  font-size: 15px;
   color: var(--veryLightGray);
   flex-direction: column;
-  margin: 5.5rem 1.5rem 5.3rem 1.5rem;
+  height: 88.4rem;
+  width: 21.8rem;
 }
 .Card h2 {
   font-family: 'Big Shoulders Display', cursive;
@@ -34,9 +45,15 @@ body {
   margin-top: 2.5rem;
 }
 .Card article {
-  /* display: flex; */
-  padding: 2.94rem;
-  /* flex-direction: column; */
+  display: flex;
+  padding: 0 2.94rem;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Card article img {
+  display: block;
 }
 .Card__first-column {
   background-color: var(--brightOrange);
@@ -68,16 +85,17 @@ body {
   display: inline-block;
   text-decoration: none;
   background-color: var(--veryLightGray);
-  padding: 1.1rem 2.1rem;
   border-radius: 1.5rem;
   font-size: small;
-  /* margin: 2px 0; */
+  height: 3.2rem;
+  width: 9.8rem;
+  text-align: center;
+  line-height: 3rem;
+  border: 0.1rem solid var(--veryLightGray);
 }
 .Card a:hover {
   background-color: transparent;
   color: var(--veryLightGray);
-  border: 0.1rem solid var(--veryLightGray);
-  padding: 1rem 2rem;
 }
 
 @media screen and (min-width: 1200px) {
@@ -92,9 +110,9 @@ body {
     padding: 0.7rem 1.7rem;
   }
   .Card__first-column {
-  border-radius: 0.5rem 0 0 0.5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
   }
   .Card__third-column {
-  border-radius: 0 0.5rem 0.5rem 0;
+    border-radius: 0 0.5rem 0.5rem 0;
   }
 }
