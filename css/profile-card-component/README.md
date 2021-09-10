@@ -15,6 +15,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
     - [What I learned](#what-i-learned)
     - [Useful resources](#useful-resources)
   - [Author](#author)
+  - [Acknowledgements](#acknowledgements)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -63,3 +64,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - Website - [César Palma (XsrPm)](https://xsrpm.github.io)
 - Frontend Mentor - [@xsrpm](https://www.frontendmentor.io/profile/xsrpm)
 - Twitter - [@xsrpma](https://www.twitter.com/xsrpma)
+
+## Acknowledgements
+
+- [@clause5](https://www.frontendmentor.io/profile/clause5)
