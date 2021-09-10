@@ -41,20 +41,22 @@ main {
 .Card h2 {
   font-family: 'Big Shoulders Display', cursive;
   text-transform: uppercase;
-  font-size: 2rem;
-  margin-top: 2.5rem;
+  font-size: 1.9rem;
+  margin-top: 2.73rem;
+  letter-spacing: 0.3rem;
 }
 .Card article {
   display: flex;
-  padding: 0 2.94rem;
+  padding: 3.2rem 3.2rem;
   flex: 1 1 auto;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .Card article img {
   display: block;
 }
+
 .Card__first-column {
   background-color: var(--brightOrange);
   border-radius: 0.5rem 0.5rem 0 0;
@@ -77,9 +79,9 @@ main {
 }
 .Card p {
   color: var(--transparentWhite);
-  line-height: 1.5rem;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
+  line-height: 1.6rem;
+  margin-top: 2.4rem;
+  margin-bottom: 1.73rem;
 }
 .Card a {
   display: inline-block;
@@ -99,20 +101,23 @@ main {
 }
 
 @media screen and (min-width: 1200px) {
+  main {
+    height: 52rem;
+    align-items: baseline;
+    padding-top: 11.4rem;
+  }
   .Card {
-    margin: 10.7rem 16.3rem 10.7rem 16.3rem;
     flex-direction: row;
-  }
-  .Card a {
-    padding: 0.9rem 1.9rem;
-  }
-  .Card a:hover {
-    padding: 0.7rem 1.7rem;
+    height: 33.333rem;
+    width: 61.333rem;
   }
   .Card__first-column {
     border-radius: 0.5rem 0 0 0.5rem;
   }
   .Card__third-column {
     border-radius: 0 0.5rem 0.5rem 0;
+  }
+  .Card p {
+    margin-bottom: 5.8rem;
   }
 }

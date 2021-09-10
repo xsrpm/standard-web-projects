@@ -15,6 +15,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
     - [What I learned](#what-i-learned)
     - [Useful resources](#useful-resources)
   - [Author](#author)
+  - [Acknowledgment](#acknowledgment)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -61,3 +62,7 @@ Users should be able to:
 - Website - [César Palma (XsrPm)](https://xsrpm.github.io)
 - Frontend Mentor - [@xsrpm](https://www.frontendmentor.io/profile/xsrpm)
 - Twitter - [@xsrpma](https://www.twitter.com/xsrpma)
+
+## Acknowledgment
+
+- [@aanacif](https://www.frontendmentor.io/profile/aanacif)
