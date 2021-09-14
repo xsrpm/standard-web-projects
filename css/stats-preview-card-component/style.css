@@ -37,7 +37,13 @@ main {
 .Card__header {
   display: flex;
   border-radius: 1rem 1rem 0 0;
-  background-color: hsl(277deg 88% 31%);
+  background-color: var(--softViolet);
+  background-image: url(./images/image-header-mobile.jpg);
+  background-blend-mode: multiply;
+  height: 16rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* object-fit: contain; */
 }
 
 .Card__header img {
@@ -92,6 +98,8 @@ main {
   }
   .Card__header {
     border-radius: 0 1rem 1rem 0;
+    height: 29.7333rem;
+    width: 36rem;
   }
   .Card__header img {
     border-radius: 0 1rem 1rem 0;

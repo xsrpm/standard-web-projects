@@ -45,6 +45,7 @@ Users should be able to:
 - CSS flexbox
 - CSS border-radius
 - CSS text-transform
+- CSS background blend modes
 - Mobile-first workflow
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
@@ -58,6 +59,8 @@ Users should be able to:
 
 - https://www.w3schools.com/css/css_image_transparency.asp
 - https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform
+- https://tympanus.net/codrops/css_reference/background-blend-mode/
+- https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode
 
 ## Author
 
