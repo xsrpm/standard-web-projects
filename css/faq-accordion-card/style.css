@@ -54,6 +54,7 @@ main {
   box-shadow: -4px 39px 18px -15px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: -4px 39px 18px -15px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: -4px 39px 18px -15px rgba(0, 0, 0, 0.2);
+  color: var(--veryDarkGrayishBlue);
 }
 
 .card header {
@@ -90,6 +91,7 @@ main {
   font-size: 2.33rem;
   margin-bottom: 3.16rem;
   margin-top: 2.4166rem;
+  /* color: var(--veryDarkDesaturatedBlue); */
 }
 
 .card article .rows {
@@ -105,6 +107,7 @@ main {
 
 .card article .row hr {
   margin: 1.3rem 0;
+  border-color: var(--lightGrayishBlue);
 }
 
 .card article .question {
@@ -129,7 +132,6 @@ main {
 
 .card .close .question {
   font-weight: 400;
-  font-size: 1rem;
 }
 
 .card .question .arrow {
@@ -151,6 +153,8 @@ main {
     flex-direction: row;
     justify-content: center;
     overflow: hidden;
+    align-items: flex-start;
+    padding-top: 6rem;
   }
   .card header {
     left: 0rem;
@@ -179,8 +183,15 @@ main {
   }
   .card h1 {
     text-align: left;
-    font-size: 1.8rem;
-    letter-spacing: 0.3rem;
+    font-size: 2.8rem;
+    /* letter-spacing: 0.3rem; */
+    margin-top: 0;
+  }
+  .card .close .question {
+    font-size: 1.2rem;
+  }
+  .card .close .answer {
+    font-size: 1.2rem;
   }
 
   .box {
