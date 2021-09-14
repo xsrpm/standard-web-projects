@@ -51,19 +51,27 @@ main {
   margin-top: 12.333rem;
   flex-direction: column;
   align-items: center;
-  box-shadow: -4px 39px 18px -15px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: -4px 39px 18px -15px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: -4px 39px 18px -15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 16px 20px 6px rgba(0, 0, 0, 0.48);
+  -webkit-box-shadow: 0px 16px 20px 6px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 0px 16px 20px 6px rgba(0, 0, 0, 0.48);
   color: var(--veryDarkGrayishBlue);
 }
 
 .card header {
 }
 
+.card header .illustration-div {
+  position: relative;
+  /* left: -26rem; */
+  /* width: 500px; */
+  /* background-color: aquamarine; */
+  /* height: 600px; */
+}
+
 .card header .illustration {
   top: -9rem;
-  left: 1.5rem;
-  padding-left: 1.3rem;
+  left: -12.5rem;
+  /* padding-left: 1.3rem; */
   position: absolute;
   background-image: url(./images/illustration-woman-online-mobile.svg);
   width: 266px;
@@ -76,7 +84,7 @@ main {
   width: 240px;
   height: 104px;
   top: 0rem;
-  left: 3.6rem;
+  left: -10.4rem;
 }
 
 .card article {
@@ -90,8 +98,7 @@ main {
 .card h1 {
   font-size: 2.33rem;
   margin-bottom: 3.16rem;
-  margin-top: 2.4166rem;
-  /* color: var(--veryDarkDesaturatedBlue); */
+  margin-top: 1.4166rem;
 }
 
 .card article .rows {
@@ -152,27 +159,32 @@ main {
     width: 76.667rem;
     flex-direction: row;
     justify-content: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     align-items: flex-start;
     padding-top: 6rem;
   }
-  .card header {
+  .card header .illustration-div {
     left: 0rem;
+    top: 6rem;
+    position: absolute;
+    /* background-color: #d4d4ea; */
+    width: 472px;
     overflow: hidden;
+    height: 438px;
   }
   .card header .illustration {
     background-image: url(./images/illustration-woman-online-desktop.svg);
     width: 472px;
     height: 359px;
-    top: 4rem;
-    left: -6rem;
+    top: 0rem;
+    left: -7rem;
   }
   .card header .shadow {
     background: url(./images/bg-pattern-desktop.svg);
     width: 960px;
     height: 956px;
-    left: -46.5rem;
-    top: -25rem;
+    left: -47.5rem;
+    top: -30.5rem;
   }
 
   .card article {
@@ -184,7 +196,6 @@ main {
   .card h1 {
     text-align: left;
     font-size: 2.8rem;
-    /* letter-spacing: 0.3rem; */
     margin-top: 0;
   }
   .card .close .question {
@@ -199,7 +210,11 @@ main {
     width: 191px;
     height: 184px;
     position: absolute;
-    left: 14rem;
-    top: 28rem;
+    left: -7.7rem;
+    top: 17rem;
+    box-shadow: crimson;
+  }
+
+  .box {
   }
 }
