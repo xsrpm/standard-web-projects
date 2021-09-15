@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px dashed red; */
+}
+
+:root {
+  /* Primary */
+
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+
+  /*Neutral*/
+
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+  font-size: 15px;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+}
+
+main {
+  background-image: url(./images/bg-pattern-top-mobile.svg),
+    url(./images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  width: 375px;
+  height: 1530px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  width: 327px;
+  height: 1352px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card > header {
+  display: grid;
+  grid-row-gap: 23px;
+}
+
+.card > header > p {
+  text-align: center;
+  color: var(--DarkGrayishMagenta);
+  font-weight: 500;
+}
+
+.card > header h1 {
+  color: var(--VeryDarkMagenta);
+  text-align: center;
+}
+
+.card .ratings {
+  display: grid;
+  grid-row-gap: 16px;
+}
+
+.card .rating {
+  background-color: var(--LightGrayishMagenta);
+  border-radius: 0.5rem;
+  height: 78px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card .rating .label {
+  text-align: center;
+  color: var(--VeryDarkMagenta);
+  font-weight: 600;
+}
+.card .stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card .star {
+  background: url(./images/icon-star.svg);
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 16px;
+  display: block;
+}
+
+.card .stars .label {
+}
+
+.card .comments {
+  display: grid;
+  grid-row-gap: 16px;
+}
+
+.card .comment {
+  background-color: var(--VeryDarkMagenta);
+  border-radius: 0.5rem;
+  height: 248px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 32px;
+}
+
+.card .comment .photo {
+  padding-right: 21px;
+}
+
+.card .comment .author {
+  display: flex;
+  height: 40px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .comment img {
+  background-image: url(./images/image-colton.jpg);
+  border-radius: 50%;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.card .comment header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card .comment > p {
+  color: var(--White);
+}
+
+.card .comment .fullName {
+  color: var(--White);
+  font-weight: 600;
+}
+
+.card .comment .job {
+  color: var(--SoftPink);
+}
