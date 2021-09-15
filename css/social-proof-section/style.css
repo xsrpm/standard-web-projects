@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* outline: 1px dashed red; */
+  outline: 1px dashed red;
 }
 
 :root {
@@ -28,17 +28,18 @@ main {
     url(./images/bg-pattern-bottom-mobile.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: top left, bottom right;
-  width: 375px;
-  height: 1530px;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  padding-top: 79px;
 }
 
 .card {
   width: 327px;
-  height: 1352px;
+  /* height: 1352px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -47,6 +48,7 @@ main {
 .card > header {
   display: grid;
   grid-row-gap: 23px;
+  margin-bottom: 45px;
 }
 
 .card > header > p {
@@ -63,6 +65,7 @@ main {
 .card .ratings {
   display: grid;
   grid-row-gap: 16px;
+  margin-bottom: 49px;
 }
 
 .card .rating {
@@ -93,12 +96,10 @@ main {
   display: block;
 }
 
-.card .stars .label {
-}
-
 .card .comments {
   display: grid;
   grid-row-gap: 16px;
+  margin-bottom: 20px;
 }
 
 .card .comment {
@@ -147,4 +148,20 @@ main {
 
 .card .comment .job {
   color: var(--SoftPink);
+}
+
+@media screen and (min-width: 700px) {
+  .card {
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  }
+  .card > header h1 {
+    text-align: left;
+    /* font-size: 15px; */
+  }
+  .card > header > p {
+    text-align: left;
+    font-size: 10px;
+  }
 }
