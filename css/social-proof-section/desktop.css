@@ -1,0 +1,75 @@
+main {
+  background-image: url(./images/bg-pattern-top-desktop.svg),
+    url(./images/bg-pattern-bottom-desktop.svg);
+  height: 800px;
+}
+
+.card {
+  grid-template: 1fr 266px 10.88px / 50% 50%;
+  grid-template-areas:
+    'header ratings'
+    'comments comments'
+    'attribution attribution';
+  width: 1110px;
+  padding-top: 127px;
+}
+.card > header {
+  grid-area: header;
+  width: 470px;
+  justify-content: space-between;
+}
+
+.card > header h1 {
+  text-align: left;
+  font-size: 3rem;
+}
+.card > header > p {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+.card .ratings {
+  grid-area: ratings;
+  height: 236px;
+  margin-top: 16px;
+  justify-content: end;
+}
+
+.card .rating {
+  height: 55px;
+  flex-direction: row;
+  width: 445px;
+  align-items: center;
+}
+
+.card .rating2 {
+  margin-left: 48px;
+}
+
+.card .rating3 {
+  margin-left: 96px;
+}
+
+.card .comments {
+  grid-area: comments;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card .comment {
+  width: 350px;
+  height: 234px;
+}
+
+.card .comment2 {
+  margin-top: 16px;
+}
+
+.card .comment3 {
+  margin-top: 32px;
+}
+
+.card .attribution {
+  grid-area: attribution;
+}
