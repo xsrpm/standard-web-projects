@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* outline: 1px dashed red; */
+  outline: 1px dashed red;
 }
 
 :root {
@@ -127,7 +127,7 @@ body {
   height: 6.4rem;
   grid-template-columns: 3fr 2fr 2fr 2fr auto;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .card .share-section .share-options {
@@ -135,6 +135,7 @@ body {
   grid-template-columns: 2fr 1fr 1fr 1fr;
   width: 22rem;
   align-items: center;
+  justify-items: center;
 }
 
 .card .share-section span {
@@ -153,4 +154,8 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.card .share-section > svg {
+  display: none;
 }
