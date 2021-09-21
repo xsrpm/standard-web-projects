@@ -30,6 +30,9 @@ body {
   border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
   background-color: white;
   flex-direction: column;
+  box-shadow: 1px 22px 26px 8px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 1px 22px 26px 8px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 1px 22px 26px 8px rgba(0, 0, 0, 0.12);
 }
 
 .card header {

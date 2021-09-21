@@ -15,6 +15,7 @@ This is a solution to the [Article preview component challenge on Frontend Mento
     - [What I learned](#what-i-learned)
     - [Useful resources](#useful-resources)
   - [Author](#author)
+  - [Acknolegments](#acknolegments)
 
 ## Overview
 
@@ -64,3 +65,8 @@ Users should be able to:
 - Website - [César Palma (XsrPm)](https://xsrpm.github.io)
 - Frontend Mentor - [@xsrpm](https://www.frontendmentor.io/profile/xsrpm)
 - Twitter - [@xsrpma](https://www.twitter.com/xsrpma)
+
+## Acknolegments
+
+- [Fluffy Kas](https://www.frontendmentor.io/profile/FluffyKas)
+- [Vinay Puppal](https://www.frontendmentor.io/profile/vinaypuppal)
