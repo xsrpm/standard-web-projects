@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: 1px dashed red;
+  /* outline: 1px dashed red; */
 }
 
 :root {
@@ -73,11 +73,17 @@ body {
   margin-top: 3.5rem;
 }
 
+.card .author.active {
+  position: relative;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
 .card .author .photo {
   margin-right: 1.6rem;
   display: flex;
   align-content: center;
   justify-content: center;
+  visibility: visible;
 }
 .card .author .photo img {
   border-radius: 50%;
@@ -89,6 +95,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   height: 4rem;
+  visibility: visible;
 }
 
 .card .author .description .name {
@@ -97,6 +104,12 @@ body {
 }
 .card .author .description .date {
   color: var(--GrayishBlue);
+}
+
+.card .share-button {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .card .share-button div {
@@ -127,15 +140,14 @@ body {
   height: 6.4rem;
   grid-template-columns: 3fr 2fr 2fr 2fr auto;
   align-items: center;
-  justify-content: space-around;
 }
 
 .card .share-section .share-options {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  width: 22rem;
+  width: 17.7rem;
   align-items: center;
-  justify-items: center;
+  flex-direction: row;
+  grid-template-columns: 1fr 0.4fr 0.4fr 0.4fr;
 }
 
 .card .share-section span {
@@ -158,4 +170,8 @@ body {
 
 .card .share-section > svg {
   display: none;
+}
+
+.card .share-options > svg {
+  cursor: pointer;
 }
