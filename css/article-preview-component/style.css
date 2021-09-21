@@ -23,11 +23,13 @@ body {
 }
 
 .card {
+  display: flex;
   width: 32.7rem;
   margin: 0 auto;
   margin-top: 7.4rem;
   border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
   background-color: white;
+  flex-direction: column;
 }
 
 .card header {
@@ -43,6 +45,7 @@ body {
   padding-top: 4rem;
   position: relative;
   height: 31.2rem;
+  /* width: 44.5rem; */
 }
 
 .card article > * {

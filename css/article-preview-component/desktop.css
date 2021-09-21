@@ -1,0 +1,19 @@
+.card {
+  flex-direction: row;
+  width: 73rem;
+  height: 28rem;
+  margin-top: 26rem;
+}
+
+.card header {
+  width: 28.5rem;
+  height: 100%;
+  border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.card article {
+  width: 44.5rem;
+}
+
+.card .share-section {
+}
