@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px dashed red; */
+}
+
+:root {
+  --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+  --GrayishBlue: hsl(212, 23%, 69%);
+  --LightGrayishBlue: hsl(210, 46%, 95%);
+  font-size: 62.5%;
+  font-family: 'Manrope', sans-serif;
+}
+
+body {
+  font-size: 1.3rem;
+  background-color: var(--LightGrayishBlue);
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 1fr auto;
+}
+
+.card {
+  width: 32.7rem;
+  height: 51.1rem;
+  margin: 0 auto;
+  margin-top: 7.4rem;
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+  background-color: white;
+}
+
+.card header {
+  background-image: url(./images/drawers.jpg);
+  width: 32.7rem;
+  height: 20rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.card article {
+  padding: 4rem 3.2rem 0 3.2rem;
+}
+
+.card article > h1 {
+  font-size: 1.6rem;
+  color: var(--VeryDarkGrayishBlue);
+}
+
+.card article > p {
+  margin-top: 1.8rem;
+  font-size: 1.33rem;
+  line-height: 1.8rem;
+  color: var(--DesaturatedDarkBlue);
+}
+
+.card .author {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 3.4rem;
+}
+
+.card .author .photo {
+  margin-right: 1.6rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.card .author .photo img {
+  border-radius: 50%;
+  width: 4rem;
+}
+
+.card .author .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 4rem;
+}
+
+.card .author .description .name {
+  font-size: 1.3rem;
+  color: var(--VeryDarkGrayishBlue);
+}
+.card .author .description .date {
+  color: var(--GrayishBlue);
+}
+.card .author .share {
+  margin-left: auto;
+  display: flex;
+}
+
+.card .author .share .share-button {
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: var(--LightGrayishBlue);
+  border-radius: 50%;
+  background-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .author .share .share-button img {
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
