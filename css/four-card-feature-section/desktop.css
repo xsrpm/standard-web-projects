@@ -1,0 +1,43 @@
+.card h1 {
+  font-size: 3.6rem;
+}
+
+.card h2 {
+  font-size: 3.6rem;
+}
+
+.card .list {
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: auto auto auto;
+  grid-template-areas:
+    'area1 area2 area4'
+    'area1 area3 area4';
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  height: auto;
+  align-items: center;
+  max-width: 111rem;
+  margin: 0 auto;
+  margin-top: 6.5rem;
+}
+
+.card article {
+  max-width: 35rem;
+  min-width: 31.1rem;
+  min-height: 22.2rem;
+  max-height: 25rem;
+  height: 25rem;
+}
+
+.card article:nth-of-type(1) {
+  grid-area: area1;
+}
+.card article:nth-of-type(2) {
+  grid-area: area2;
+}
+.card article:nth-of-type(3) {
+  grid-area: area3;
+}
+.card article:nth-of-type(4) {
+  grid-area: area4;
+}

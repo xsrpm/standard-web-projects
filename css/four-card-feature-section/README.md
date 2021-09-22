@@ -27,6 +27,7 @@ Users should be able to:
 ### Screenshot
 
 ![Mobile](mobile.png)
+![Desktop](desktop.png)
 
 ### Links
 
@@ -45,7 +46,8 @@ Users should be able to:
 
 ### What I learned
 
-...
+- improve my knowledge of css grid
+- use less code for web responsive using max-width, min-width, min-height, max-height, height: auto, margin: 0 auto
 
 ### Useful resources
 
