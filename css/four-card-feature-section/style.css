@@ -31,6 +31,9 @@ body {
   min-height: 136rem;
 }
 
+main {
+  display: grid;
+}
 .card {
   width: 31.1rem;
   margin: 0 auto;
@@ -39,7 +42,7 @@ body {
 }
 
 .card h1 {
-  font-size: 2.1rem;
+  font-size: 2.4rem;
   text-align: center;
   font-weight: 200;
 }
@@ -47,8 +50,16 @@ body {
 .card h2 {
   text-align: center;
   margin-top: 1rem;
+  font-size: 2.4rem;
 }
-.card .list {height: 96rem;display: grid;margin-top: 7.6rem;}
+
+.card header p {text-align: center;color: var(--GrayishBlue);font-size: 1.5rem;}
+
+.card .list {
+  height: 96rem;
+  display: grid;
+  margin-top: 7.6rem;
+}
 .card article {
   height: 22.2rem;
   box-shadow: -1px 8px 17px 3px rgba(0, 0, 0, 0.19);
