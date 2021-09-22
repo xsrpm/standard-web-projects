@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px dashed red; */
+}
+
+:root {
+  /*Primary*/
+
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  /*Neutral*/
+
+  --VeryDarkBlue: hsl(234, 12%, 34%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-size: 1.5rem;
+  background-color: var(--VeryLightGray);
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr auto;
+  min-height: 136rem;
+}
+
+.card {
+  width: 31.1rem;
+  margin: 0 auto;
+  margin-top: 9rem;
+  height: 120rem;
+}
+
+.card h1 {
+  font-size: 2.1rem;
+  text-align: center;
+  font-weight: 200;
+}
+
+.card h2 {
+  text-align: center;
+  margin-top: 1rem;
+}
+.card .list {height: 96rem;display: grid;margin-top: 7.6rem;}
+.card article {
+  height: 22.2rem;
+  box-shadow: -1px 8px 17px 3px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: -1px 8px 17px 3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -1px 8px 17px 3px rgba(0, 0, 0, 0.19);
+  border-radius: 0.5rem;
+  padding: 2.7rem;
+  display: flex;
+  flex-direction: column;
+}
+.card article:nth-of-type(1) {
+  border-top: 0.4rem solid var(--Cyan);
+}
+.card article:nth-of-type(2) {
+  border-top: 0.4rem solid var(--Red);
+}
+.card article:nth-of-type(3) {
+  border-top: 0.4rem solid var(--Orange);
+}
+.card article:nth-of-type(4) {
+  border-top: 0.4rem solid var(--Blue);
+}
+.card article h3 {
+  font-size: 2rem;
+}
+.card article p {
+  color: var(--GrayishBlue);
+  font-size: 1.3rem;
+}
+.card article picture {
+  margin-top: auto;
+  align-self: end;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.card > p {
+  text-align: center;
+  color: var(--GrayishBlue);
+  margin-top: 2.1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
