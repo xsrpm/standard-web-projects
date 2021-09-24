@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px dashed red; */
+}
+
+:root {
+  /*Primary*/
+
+  --DesaturatedRed: hsl(0, 36%, 70%);
+  --SoftRed: hsl(0, 93%, 68%);
+
+  /*Neutral*/
+
+  --DarkGrayishRed: hsl(0, 6%, 24%);
+  font-size: 62.5%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+main {
+}
+.header {
+  height: 84px;
+  padding-left: 32px;
+  display: grid;
+  align-items: center;
+}
+.header img {
+  display: block;
+  height: 26px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  padding: 63px 32px 92px 32px;
+}
+
+.container h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  font-size: 3.9rem;
+  letter-spacing: 1rem;
+}
+
+.container h1 span {
+  font-weight: 300;
+  display: block;
+  color: var(--DesaturatedRed);
+}
+
+.container p {
+  margin-top: 23px;
+  color: var(--DesaturatedRed);
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+.container form {
+  margin-top: 37px;
+  border: var(--DesaturatedRed) solid 1px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.container form input {
+  border: transparent;
+  padding: 0px 0px 0px 29px;
+  border-radius: 25px;
+  height: 48px;
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  color: var(--DarkGrayishRed);
+}
+
+.container form input:focus {
+  outline: none;
+}
+
+.container form input::placeholder {
+  color: var(--DesaturatedRed);
+  font-family: 'Josefin Sans', sans-serif;
+}
+.container form button {
+  cursor: pointer;
+  background: rgb(255, 204, 204);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 204, 204, 1) 0%,
+    rgba(218, 97, 97, 1) 100%
+  );
+  width: 64px;
+  border-radius: 25px;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: -1px;
+  height: 49px;
+  border: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: -4px 13px 38px -7px var(--DesaturatedRed);
+  -moz-box-shadow: -4px 13px 38px -7px var(--DesaturatedRed);
+  box-shadow: -4px 13px 38px -7px var(--DesaturatedRed);
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
