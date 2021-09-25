@@ -20,6 +20,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="desktop.css"
+      rel="stylesheet"
+      media="screen and (min-width:1024px)"
+    />
   </head>
   <body>
     <main>
@@ -27,10 +32,16 @@
         <img src="./images/logo.svg" alt="Base Apparel Logo" />
       </div>
       <div class="hero">
-        <img src="./images/hero-mobile.jpg" alt="a woman" />
+        <picture>
+          <source
+            srcset="./images/hero-desktop.jpg"
+            media="(min-width: 1024px)"
+          />
+          <img src="./images/hero-mobile.jpg" alt="a woman" />
+        </picture>
       </div>
       <div class="container">
-        <h1><span>We're</span> coming soon</h1>
+        <h1><span>We're</span><span>coming</span><span>soon</span></h1>
         <p>
           Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our
@@ -38,21 +49,24 @@
         </p>
         <form>
           <input type="email" placeholder="Email Address" />
-          <button type="submit">
-            <img src="./images/icon-arrow.svg" alt="send button" />
-          </button>
+          <div>
+            <span class="error-icon hide"></span>
+            <button type="submit">
+              <img src="./images/icon-arrow.svg" alt="send button" />
+            </button>
+          </div>
+          <span class="message hide">Please provide a valid email</span>
         </form>
+        <div class="attribution">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0"
+            target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://www.frontendmentor.io/profile/xsrpm">César Palma</a>.
+        </div>
       </div>
     </main>
-
-    <footer class="attribution">
-      Challenge by
-      <a
-        href="https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0"
-        target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a href="https://www.frontendmentor.io/profile/xsrpm">César Palma</a>.
-    </footer>
   </body>
 </html>

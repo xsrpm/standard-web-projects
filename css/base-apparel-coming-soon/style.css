@@ -20,12 +20,11 @@
 
 body {
   font-size: 1.6rem;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr auto;
 }
 
 main {
+  display: grid;
+  height: 100vh;
 }
 .header {
   height: 84px;
@@ -43,7 +42,11 @@ main {
   justify-content: center;
 }
 .container {
-  padding: 63px 32px 92px 32px;
+  display: flex;
+  padding: 63px 0 92px 0;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .container h1 {
@@ -55,9 +58,12 @@ main {
 }
 
 .container h1 span {
-  font-weight: 300;
   display: block;
+}
+
+.container h1 span:first-child {
   color: var(--DesaturatedRed);
+  font-weight: 300;
 }
 
 .container p {
@@ -66,6 +72,8 @@ main {
   text-align: center;
   font-size: 1.4rem;
   line-height: 2.1rem;
+  max-width: 445px;
+  width: 83%;
 }
 .container form {
   margin-top: 37px;
@@ -74,11 +82,14 @@ main {
   display: flex;
   flex-direction: row;
   position: relative;
+  align-items: center;
+  max-width: 445px;
+  width: 83%;
 }
 
 .container form input {
   border: transparent;
-  padding: 0px 0px 0px 29px;
+  padding: 0px 40px 0px 29px;
   border-radius: 25px;
   height: 48px;
   width: 100%;
@@ -94,6 +105,40 @@ main {
   color: var(--DesaturatedRed);
   font-family: 'Josefin Sans', sans-serif;
 }
+
+.container form div {
+  position: absolute;
+  right: 0;
+  top: -1px;
+  display: grid;
+  align-items: center;
+  width: 30%;
+  justify-content: flex-end;
+  min-width: 104px;
+  grid-template-columns: auto 1fr;
+}
+
+.container form .error-icon {
+  background-image: url(./images/icon-error.svg);
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 16px;
+}
+
+.container form .message {
+  position: absolute;
+  bottom: -30px;
+  left: 30px;
+  font-size: 1.3rem;
+  color: var(--SoftRed);
+}
+
+.container .hide {
+  visibility: hidden;
+}
+
 .container form button {
   cursor: pointer;
   background: rgb(255, 204, 204);
@@ -105,9 +150,6 @@ main {
   width: 64px;
   border-radius: 25px;
   color: white;
-  position: absolute;
-  right: 0;
-  top: -1px;
   height: 49px;
   border: 0px;
   display: flex;
@@ -117,12 +159,21 @@ main {
   -webkit-box-shadow: -4px 13px 38px -7px var(--DesaturatedRed);
   -moz-box-shadow: -4px 13px 38px -7px var(--DesaturatedRed);
   box-shadow: -4px 13px 38px -7px var(--DesaturatedRed);
+  max-width: 100px;
+  min-width: 64px;
+  width: 100%;
 }
 
 .attribution {
   font-size: 1.1rem;
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  color: var(--DarkGrayishRed);
+  display: none;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--SoftRed);
 }

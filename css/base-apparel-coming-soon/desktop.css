@@ -1,0 +1,48 @@
+main {
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    'header hero'
+    'container hero';
+}
+
+.header {
+  grid-area: header;
+  padding-left: 20%;
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.container {
+  grid-area: container;
+  align-items: flex-start;
+  padding-left: 20%;
+  background-image: url(./images/bg-pattern-desktop.svg);
+}
+
+.container h1 {
+  text-align: left;
+  font-size: 6.3rem;
+}
+.container p {
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.container form {
+  border-radius: 50px;
+}
+.container form input {
+  height: 59px;
+  border-radius: 50px;
+}
+
+.container form button {
+  height: 61px;
+  border-radius: 50px;
+}
+
+.attribution {font-size: 1.5rem;}
