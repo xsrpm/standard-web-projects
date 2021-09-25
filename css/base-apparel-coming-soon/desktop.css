@@ -1,9 +1,11 @@
-main {
-  grid-template-rows: auto auto;
+body {
+  grid-template-rows: auto 1fr;
   grid-template-columns: 1fr auto;
   grid-template-areas:
     'header hero'
     'container hero';
+  background-image: url(./images/bg-pattern-desktop.svg);
+  height: auto;
 }
 
 .header {
@@ -18,8 +20,7 @@ main {
 .container {
   grid-area: container;
   align-items: flex-start;
-  padding-left: 20%;
-  background-image: url(./images/bg-pattern-desktop.svg);
+  padding: 132px 0 0 20%;
 }
 
 .container h1 {
@@ -30,14 +31,17 @@ main {
   text-align: left;
   font-size: 1.6rem;
   line-height: 2.5rem;
+  margin-top: 39px;
 }
 
 .container form {
   border-radius: 50px;
+  margin-top: 47px;
 }
 .container form input {
   height: 59px;
   border-radius: 50px;
+  font-size: 1.8rem;
 }
 
 .container form button {
@@ -45,4 +49,10 @@ main {
   border-radius: 50px;
 }
 
-.attribution {font-size: 1.5rem;}
+.container form .message {
+  font-size: 1.6rem;
+}
+
+.attribution {
+  font-size: 1.5rem;
+}
