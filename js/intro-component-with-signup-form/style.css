@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px dashed red; */
+}
+
+:root {
+  /*Primary*/
+
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+
+  /*Accent*/
+
+  --Blue: hsl(248, 32%, 49%);
+
+  /*Neutral*/
+
+  --DarkBlue: hsl(249, 10%, 26%);
+  --GrayishBlue: hsl(246, 25%, 77%);
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--Red);
+  display: grid;
+  grid-template-rows: auto auto auto;
+  height: 100vh;
+  background-image: url(./images/bg-intro-mobile.png);
+  justify-items: center;
+  align-items: center;
+}
+
+body > * {
+  width: 87.2%;
+  min-width: 327px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+header p {
+  color: white;
+  text-align: center;
+  margin-top: 26px;
+}
+
+header div {
+  color: white;
+  background-color: var(--Blue);
+  text-align: center;
+  border-radius: 15px;
+  /* height: 88px; */
+  box-shadow: 2px 7px 5px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 7px 5px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 7px 5px -3px rgba(0, 0, 0, 0.75);
+  align-items: center;
+  padding: 20px 50px;
+  margin-top: 67px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+}
+
+header div span {
+  font-weight: 700;
+}
+
+main {
+  background-color: white;
+  min-width: 327px;
+  border-radius: 15px;
+  padding: 24px 24px 29px 24px;
+  box-shadow: 2px 7px 5px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 7px 5px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 7px 5px -3px rgba(0, 0, 0, 0.75);
+  margin-top: 16px;
+}
+
+main p {
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--DarkBlue);
+  margin-top: 14px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+form button {
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 18px 0;
+  background-color: var(--Green);
+  color: white;
+  font-weight: 700;
+  box-shadow: 0px -7px 5px -3px rgba(0, 0, 0, 0.32) inset;
+  -webkit-box-shadow: 0px -7px 5px -3px rgba(0, 0, 0, 0.32) inset;
+  -moz-box-shadow: 0px -7px 5px -3px rgba(0, 0, 0, 0.32) inset;
+}
+
+form input {
+  border-radius: 5px;
+  padding: 19px 0 20px 19px;
+  border: 1px solid var(--DarkBlue);
+  font-weight: 600;
+}
+
+main p a {
+  color: var(--Red);
+  font-weight: 700;
+  text-decoration: none;
+}
