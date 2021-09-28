@@ -27,6 +27,7 @@
       rel="stylesheet"
       media="screen and (min-width:1024px)"
     />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header>
@@ -40,10 +41,31 @@
     <main>
       <div><span>Try it free 7 days</span> then $20/mo. thereafter</div>
       <form>
-        <input type="text" name="firstName" placeholder="First Name" />
-        <input type="text" name="lastName" placeholder="Last Name" />
-        <input type="text" name="email" placeholder="Email Address" />
-        <input type="password" name="password" placeholder="Password" />
+        <div id="firstName">
+          <input type="text" name="firstName" placeholder="First Name" /><span
+            class="hide"
+          ></span>
+          <p class="hide"></p>
+        </div>
+        <div id="lastName">
+          <input type="text" name="lastName" placeholder="Last Name" /><span
+            class="hide"
+          ></span>
+          <p></p>
+        </div class="hide">
+        <div id="email">
+          <input type="text" name="email" placeholder="Email Address" /><span
+            class="hide"
+          ></span>
+          <p class="hide"></p>
+        </div>
+
+        <div id="password">
+          <input type="password" name="password" placeholder="Password" /><span
+            class="hide"
+          ></span>
+          <p class="hide"></p>
+        </div>
         <button>Claim your free trial</button>
         <p>
           By clicking the button, you are agreeing to our

@@ -12,8 +12,6 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
-    - [Useful resources](#useful-resources)
   - [Author](#author)
 
 ## Overview
@@ -30,7 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Mobile](mobile.png)
+![Desktop](desktop.png)
 
 ### Links
 
@@ -46,14 +45,8 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-
-### What I learned
-
--
-
-### Useful resources
-
--
+- Responsive Design
+- Javascript y DOM
 
 ## Author
 

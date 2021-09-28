@@ -42,9 +42,10 @@ body > * {
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--DarkBlue);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: white;
 }
 
 header h1 {
@@ -67,9 +68,10 @@ header {
   margin-top: 96px;
 }
 
-main {}
+main {
+}
 
-main div {
+main > div {
   color: white;
   background-color: var(--Blue);
   text-align: center;
@@ -114,14 +116,40 @@ form button {
   letter-spacing: 0.2rem;
 }
 
-form input {
+form div input {
   border-radius: 5px;
   padding: 19px 0 19px 20px;
   border: 1px solid var(--GrayishBlue);
   font-weight: 600;
+  width: 100%;
 }
 
-main form p {
+form div span {
+  position: absolute;
+  background-image: url(./images/icon-error.svg);
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 20px;
+}
+
+form div p {
+  position: absolute;
+  right: 0;
+  bottom: -16px;
+  font-size: 1rem;
+  color: var(--Red);
+}
+
+form div {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+main form > p {
   text-align: center;
   font-size: 1.1rem;
   color: var(--GrayishBlue);
@@ -132,4 +160,13 @@ main form p a {
   color: var(--Red);
   font-weight: 700;
   text-decoration: none;
+}
+
+button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.hide {
+  visibility: hidden;
 }
