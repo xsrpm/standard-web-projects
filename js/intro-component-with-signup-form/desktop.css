@@ -1,0 +1,46 @@
+body {
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'header main'
+    'footer footer';
+  background-image: url(./images/bg-intro-desktop.png);
+  padding: 0 11.45% 0 11.45%;
+}
+
+footer.attribution {
+  grid-area: footer;
+}
+
+header {
+  grid-area: header;
+  margin-top: 0;
+}
+
+main {
+  grid-area: main;
+  max-width: 540px;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 5rem;
+  line-height: 6rem;
+  text-align: left;
+}
+
+
+header p {
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+form {
+    margin-top: 26px;
+    margin-bottom: 0;
+    padding: 40px;
+}
+
+main div {
+    margin-top: 0;
+}
