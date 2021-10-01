@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <picture>
+          <img src="./images/image-jeremy.png" />
+        </picture>
+
+        <div>
+          <h1>Report for</h1>
+          <p>Jeremy Robson</p>
+        </div>
+      </div>
+      <nav>
+        <a id="daily" href="#">Daily</a><a id="weekly" href="#">Weekly</a
+        ><a id="monthly" href="#">Monthly</a>
+      </nav>
+    </header>
+    <main>
+      <template id="template">
+        <div>
+          <div>
+            <h2 class="title">Work</h2>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div>
+            <p><span class="timeframes-current">32</span>hrs</p>
+            <p>
+              Last <span class="timeframe">Week</span> -
+              <span class="timeframes-previous">36</span>hrs
+            </p>
+          </div>
+        </div>
+      </template>
+    </main>
+    <!--
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+    -->
+  </body>
+</html>
