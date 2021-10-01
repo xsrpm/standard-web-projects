@@ -98,6 +98,10 @@ header nav a:hover {
   color: white;
 }
 
+header .active {
+  color: white;
+}
+
 header nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -106,7 +110,7 @@ header nav {
   padding: 27px 0 24px 0;
 }
 
-article div div:first-child {
+article > div > div:first-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -116,7 +120,7 @@ article h2 {
   font-size: 1.5rem;
 }
 
-article div div:last-child {
+article > div > div:last-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -163,6 +167,17 @@ article > div {
 
 article > div:hover {
   background-color: #34397b;
+  cursor: pointer;
+}
+
+article svg path {
+  fill: #bbc0ff;
+  cursor: pointer;
+}
+
+article .ellipsis:hover svg path {
+  fill: white;
+  cursor: pointer;
 }
 
 .work {
@@ -193,8 +208,4 @@ article > div:hover {
 .selfcare {
   background-color: var(--Softorangeselfcare);
   background-image: url(./images/icon-self-care.svg);
-}
-
-header .active {
-  color: white;
 }
