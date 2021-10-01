@@ -77,3 +77,8 @@ header > div > div {
 .attribution {
     font-size: 2rem;
 }
+
+header > div img {
+    width: 85px;
+    height: 85px;
+}
