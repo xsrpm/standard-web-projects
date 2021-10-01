@@ -61,6 +61,7 @@ Users should be able to:
 - https://developer.mozilla.org/es/docs/Glossary/IIFE
 - https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+- https://www.geeksforgeeks.org/css-fill-property/
 
 ## Author
 

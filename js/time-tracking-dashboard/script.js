@@ -30,7 +30,8 @@ function printMain(data) {
     }
   })
 }
-dailyFilter.addEventListener('click', () => {
+dailyFilter.addEventListener('click', (e) => {
+  e.preventDefault()
   Array.from(nav.children).forEach((item) => {
     item.classList.remove('active')
   })
@@ -38,7 +39,8 @@ dailyFilter.addEventListener('click', () => {
   dailyFilter.classList.add('active')
   printMain(data)
 })
-weeklyFilter.addEventListener('click', () => {
+weeklyFilter.addEventListener('click', (e) => {
+  e.preventDefault()
   Array.from(nav.children).forEach((item) => {
     item.classList.remove('active')
   })
@@ -46,7 +48,8 @@ weeklyFilter.addEventListener('click', () => {
   weeklyFilter.classList.add('active')
   printMain(data)
 })
-monthlyFilter.addEventListener('click', () => {
+monthlyFilter.addEventListener('click', (e) => {
+  e.preventDefault()
   Array.from(nav.children).forEach((item) => {
     item.classList.remove('active')
   })
