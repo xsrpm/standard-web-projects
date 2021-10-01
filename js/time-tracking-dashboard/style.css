@@ -94,6 +94,10 @@ header nav a {
   display: block;
 }
 
+header nav a:hover {
+  color: white;
+}
+
 header nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -155,6 +159,10 @@ article > div {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+article > div:hover {
+  background-color: #34397b;
 }
 
 .work {
