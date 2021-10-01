@@ -72,3 +72,8 @@ header nav {
 header > div > div {
   margin-top: 42px;
 }
+
+
+.attribution {
+    font-size: 2rem;
+}
