@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/xsrpm/standard-web-projects/tree/master/js/intro-component-with-signup-form)
+- [Live Site URL](https://xsrpm.github.io/standard-web-projects/js/intro-component-with-signup-form/)
 
 ## My process
 
