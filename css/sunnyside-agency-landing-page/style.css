@@ -148,11 +148,11 @@ header h1 {
 }
 
 .we-offer article:first-child a {
-  text-decoration-color: var(--Yellow);
+  text-decoration-color: hsl(51deg 100% 49% / 36%);
 }
 
 .we-offer article:nth-child(2) a {
-  text-decoration-color: var(--Softred);
+  text-decoration-color: hsl(7deg 99% 70% / 50%);
 }
 
 .we-offer .graphic-design h2 {
@@ -334,4 +334,37 @@ header .triangle {
   background-position-x: right;
   width: 24px;
   height: 26px;
+}
+
+
+a {}
+
+.we-offer article:first-child a:hover {
+    text-decoration-color: var(--Yellow);
+    cursor: pointer;
+}
+
+.we-offer article:nth-child(2) a:hover {
+    text-decoration-color: var(--Softred);
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: var(--White);
+}
+
+.social-net svg:hover path {
+    /* fill: var(--White); */
+    /* cursor: pointer; */
+}
+
+.social-net svg {}
+
+.social-net div:hover {
+    fill: var(--White);
+    cursor: pointer;
+}
+
+.social-net svg path {
+    fill: inherit;
 }
