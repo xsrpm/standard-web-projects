@@ -15,7 +15,6 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
     - [What I learned](#what-i-learned)
     - [Useful resources](#useful-resources)
   - [Author](#author)
-  - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -29,6 +28,7 @@ Users should be able to:
 ### Screenshot
 
 ![Mobile](mobile.png)
+![Desktop](desktop.png)
 
 ### Links
 
@@ -63,7 +63,3 @@ Users should be able to:
 - Website - [César Palma (XsrPm)](https://xsrpm.github.io)
 - Frontend Mentor - [@xsrpm](https://www.frontendmentor.io/profile/xsrpm)
 - Twitter - [@xsrpma](https://www.twitter.com/xsrpma)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.

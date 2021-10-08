@@ -1,0 +1,155 @@
+header .menu-button {
+  display: none;
+}
+
+header .desktop-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+header .desktop-menu li {
+  display: flex;
+}
+
+header .desktop-menu ul {
+  list-style-type: none;
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+header .desktop-menu a {
+  text-decoration: none;
+  color: var(--White);
+}
+
+header .desktop-menu span {
+  font-size: 1.7rem;
+}
+
+img.logo {
+  width: 170px;
+  height: 35px;
+}
+
+header .desktop-menu .contact-button {
+  padding: 21px 32px;
+  background-color: var(--White);
+  border-radius: 30px;
+  color: var(--Verydarkdesaturatedblue);
+  text-transform: uppercase;
+  font-family: 'Fraunces', serif;
+}
+
+header {
+  padding: 34px 0 133px 0;
+  background-image: url(./images/desktop/image-header.jpg);
+  height: 100vh;
+}
+
+header > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header .desktop-menu .contact-button:hover {
+  background-color: #6fcfff;
+  color: var(--White);
+}
+
+header h1 {
+  /* padding: 0; */
+}
+
+.we-offer .transform-your-brand {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'text image';
+  max-height: 600px;
+  grid-area: row1;
+}
+
+section.we-offer {
+}
+
+div > img {
+}
+
+.transform-your-brand picture {
+  grid-area: image;
+}
+
+.transform-yout-brand > div {
+  grid-column-start: 1;
+}
+
+.we-offer article > div {
+  grid-area: text;
+  text-align: left;
+  padding: 70px 11.8% 70px 11.8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.we-offer article p {
+  padding: 0;
+}
+
+.we-offer article h2 {
+  padding: 0;
+}
+
+.we-offer .stand-out-to {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'image text';
+  grid-area: row2;
+  max-height: 600px;
+}
+
+.we-offer {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'row1 row1'
+    'row2 row2'
+    'row31 row32';
+}
+
+
+.we-offer .graphic-design {
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    max-height: 600px;
+}
+
+.we-offer .photography {
+    background-image: url(./images/desktop/image-photography.jpg);
+    max-height: 600px;
+}
+
+.client-testimonials {
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonials {
+    display: flex;
+}
+
+.pictures {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto auto auto auto;
+}
+
+.pictures img {
+    width: 25vw;
+}

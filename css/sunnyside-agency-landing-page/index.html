@@ -22,6 +22,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="desktop.css"
+      media="screen and
+    (min-width:1024px)"
+    />
     <script src="script.js" async defer></script>
   </head>
   <body>
@@ -29,12 +35,28 @@
       <div>
         <img class="logo" src="images/logo.svg" alt="logo" />
         <span id="menu-button" class="menu-button"></span>
+        <nav class="desktop-menu">
+          <ul>
+            <li>
+              <a href="#"><span>About</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Services</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Projects</span></a>
+            </li>
+            <li>
+              <a href="#" class="contact-button"><span>Contact</span></a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <h1>We are creatives</h1>
       <picture>
         <img src="./images/icon-arrow-down.svg" alt="down arrow" />
       </picture>
-      <nav>
+      <nav class="mobile-menu">
         <div>
           <span class="triangle"></span>
         </div>
@@ -56,7 +78,7 @@
     </header>
     <main>
       <section class="we-offer">
-        <article>
+        <article class="transform-your-brand">
           <picture>
             <img
               src="./images/mobile/image-transform.jpg"
@@ -73,7 +95,7 @@
             <a href="#">Learn more</a>
           </div>
         </article>
-        <article>
+        <article class="stand-out-to">
           <picture>
             <img
               src="images/mobile/image-stand-out.jpg"
@@ -108,38 +130,46 @@
       </section>
       <section class="client-testimonials">
         <h2>Client testimonials</h2>
-        <div>
-          <picture>
-            <img src="./images/image-emily.jpg" alt="Emily R. photography" />
-          </picture>
-          <p class="comment">
-            We put our trust in Sunnyside and they delivered, making sure our
-            needs were met and deadlines were always hit.
-          </p>
-          <p class="client-name">Emily R.</p>
-          <p class="role">Marketing Director</p>
-        </div>
-        <div>
-          <picture>
-            <img src="./images/image-thomas.jpg" alt="Thomas S. photography" />
-          </picture>
-          <p class="comment">
-            Sunnyside’s enthusiasm coupled with their keen interest in our
-            brand’s success made it a satisfying and enjoyable experience.
-          </p>
-          <p class="client-name">Thomas S.</p>
-          <p class="role">Chief Operating Officer</p>
-        </div>
-        <div>
-          <picture>
-            <img src="./images/image-jennie.jpg" alt="Jennie F. photography" />
-          </picture>
-          <p class="comment">
-            Incredible end result! Our sales increased over 400% when we worked
-            with Sunnyside. Highly recommended!
-          </p>
-          <p class="client-name">Jennie F.</p>
-          <p class="role">Business Owner</p>
+        <div class="testimonials">
+          <div>
+            <picture>
+              <img src="./images/image-emily.jpg" alt="Emily R. photography" />
+            </picture>
+            <p class="comment">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <p class="client-name">Emily R.</p>
+            <p class="role">Marketing Director</p>
+          </div>
+          <div>
+            <picture>
+              <img
+                src="./images/image-thomas.jpg"
+                alt="Thomas S. photography"
+              />
+            </picture>
+            <p class="comment">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <p class="client-name">Thomas S.</p>
+            <p class="role">Chief Operating Officer</p>
+          </div>
+          <div>
+            <picture>
+              <img
+                src="./images/image-jennie.jpg"
+                alt="Jennie F. photography"
+              />
+            </picture>
+            <p class="comment">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <p class="client-name">Jennie F.</p>
+            <p class="role">Business Owner</p>
+          </div>
         </div>
       </section>
       <section class="pictures">
@@ -223,12 +253,17 @@
           </svg>
         </div>
       </span>
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/xsrpm">César Palma</a>.
     </footer>
 
     <!--
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
   --></body>
 </html>

@@ -34,6 +34,7 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: auto;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -62,13 +63,14 @@ header > div {
   position: relative;
 }
 
-nav {
+.mobile-menu {
   display: none;
   position: absolute;
 }
 
 header > picture {
   text-align: center;
+  padding-top: 40px;
 }
 
 header h1 {
@@ -220,7 +222,7 @@ section.client-testimonials {
   padding-top: 66px;
 }
 
-section.pictures {
+.pictures {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -242,6 +244,7 @@ footer {
   color: var(--Darkmoderatecyan);
   fill: var(--Darkmoderatecyan);
   padding: 64px 0 80px 0;
+  gap: 10px;
 }
 
 footer .logo path {
@@ -258,7 +261,7 @@ header svg.logo {
 footer a {
   color: var(--Darkmoderatecyan);
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
 }
 
 footer .links {
@@ -281,8 +284,7 @@ footer span.social-net {
   gap: 28px;
 }
 
-picture {
-}
+picture {display: flex;justify-content: center;}
 
 .open {
   display: flex;
@@ -294,13 +296,13 @@ picture {
   text-align: center;
 }
 
-header nav a {
+header .mobile-menu a {
   text-decoration: none;
   color: var(--Darkgrayishblue);
   font-size: 2.1rem;
 }
 
-header nav ul {
+header .mobile-menu ul {
   list-style-type: none;
   background-color: var(--White);
   padding: 45px 0 39px 0;
@@ -309,7 +311,7 @@ header nav ul {
   gap: 41px;
 }
 
-header nav a.contact-button {
+header .mobile-menu a.contact-button {
   font-family: 'Fraunces', serif;
   text-transform: uppercase;
   background-color: #fbd601;
@@ -367,4 +369,12 @@ footer a:hover {
 
 .social-net svg path {
     fill: inherit;
+}
+
+header .menu-button:hover {
+    cursor: pointer;
+}
+
+header .desktop-menu {
+    display: none;
 }
