@@ -28,7 +28,7 @@
       media="screen and
     (min-width:1024px)"
     />
-    <script src="script.js" async defer></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -77,7 +77,7 @@
       </nav>
     </header>
     <main>
-      <section class="we-offer">
+      <div class="we-offer">
         <article class="transform-your-brand">
           <picture>
             <img
@@ -127,8 +127,8 @@
             photos that improve your business image.
           </p>
         </article>
-      </section>
-      <section class="client-testimonials">
+      </div>
+      <div class="client-testimonials">
         <h2>Client testimonials</h2>
         <div class="testimonials">
           <div>
@@ -171,30 +171,17 @@
             <p class="role">Business Owner</p>
           </div>
         </div>
-      </section>
-      <section class="pictures">
-        <div>
-          <img
-            src="images/mobile/image-gallery-milkbottles.jpg"
-            alt="milk bottles"
-          />
+      </div>
+      <div class="pictures">
+        <div class="milk-bottles">
         </div>
-        <div>
-          <img src="images/mobile/image-gallery-orange.jpg" alt="orange" />
+        <div class="orange">
         </div>
-        <div>
-          <img
-            src="images/mobile/image-gallery-cone.jpg"
-            alt="ice scream cone"
-          />
+        <div class="cone">
         </div>
-        <div>
-          <img
-            src="images/mobile/image-gallery-sugar-cubes.jpg"
-            alt="sugar cubes"
-          />
+        <div class="sugar-cubes">
         </div>
-      </section>
+      </div>
     </main>
     <footer>
       <span>
@@ -212,10 +199,13 @@
           />
         </svg>
       </span>
-      <span class="links">
-        <a href="#">About</a> <a href="#">Services</a> <a href="#">Projects</a>
-      </span>
-      <span class="social-net">
+      <div class="links">
+        <ul>
+          <li><a href="#"><span>About</span></a></li><li><a href="#"><span>Services</span></a></li><li><a href="#"><span>Projects</span></a></li>
+        </ul>
+          
+      </div>
+      <div class="social-net">
         <div>
           <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -252,7 +242,7 @@
             />
           </svg>
         </div>
-      </span>
+      </div>
       <div class="attribution">
         Challenge by
         <a

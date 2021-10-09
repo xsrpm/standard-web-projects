@@ -24,7 +24,7 @@ header .desktop-menu a {
 }
 
 header .desktop-menu span {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 }
 
 img.logo {
@@ -42,9 +42,9 @@ header .desktop-menu .contact-button {
 }
 
 header {
-  padding: 34px 0 133px 0;
+  padding: 34px 0 310px 0;
   background-image: url(./images/desktop/image-header.jpg);
-  height: 100vh;
+  height: 800px;
 }
 
 header > div {
@@ -58,16 +58,13 @@ header .desktop-menu .contact-button:hover {
   color: var(--White);
 }
 
-header h1 {
-  /* padding: 0; */
-}
+header h1 {font-size: 5rem;}
 
 .we-offer .transform-your-brand {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     'text image';
-  max-height: 600px;
   grid-area: row1;
 }
 
@@ -105,8 +102,7 @@ div > img {
 .we-offer .stand-out-to {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    'image text';
+  grid-template-areas: 'image text';
   grid-area: row2;
   max-height: 600px;
 }
@@ -121,35 +117,76 @@ div > img {
     'row31 row32';
 }
 
-
 .we-offer .graphic-design {
-    background-image: url(./images/desktop/image-graphic-design.jpg);
-    max-height: 600px;
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+  max-height: 600px;
 }
 
 .we-offer .photography {
-    background-image: url(./images/desktop/image-photography.jpg);
-    max-height: 600px;
+  background-image: url(./images/desktop/image-photography.jpg);
+  max-height: 600px;
 }
 
 .client-testimonials {
 }
 
 .testimonials {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .testimonials {
-    display: flex;
+  display: flex;
 }
 
 .pictures {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: auto auto auto auto;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .pictures img {
-    width: 25vw;
+  width: 25vw;
+}
+
+.pictures .milk-bottles {
+  background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+}
+
+
+.pictures div {
+    height: 33vw;
+}
+
+.pictures .orange {
+    background-image: url(./images/desktop/image-gallery-orange.jpg);
+}
+
+footer .links {
+    display: flex;
+    justify-content: center;
+    gap: 54px;
+}
+
+.testimonials {}
+
+.client-testimonials div {
+    padding: 30px 24px;
+}
+
+.client-testimonials {
+    padding-top: 164px;
+    padding-bottom: 164px;
+}
+
+header > div {
+    padding: 0 48px 0 48px;
+}
+
+.attribution {
+    font-size: 19px;
+}
+
+.attribution a {
+    font-size: 2rem;
 }

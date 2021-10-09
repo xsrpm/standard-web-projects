@@ -32,12 +32,19 @@ body {
 }
 
 .attribution {
-  font-size: 11px;
-  text-align: center;
+  font-size: 15px;
   margin-top: auto;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: var(--White);
+  align-items: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Verydarkdesaturatedblue);
 }
 
 header {
@@ -82,7 +89,7 @@ header h1 {
   font-weight: 900;
   letter-spacing: 0.5rem;
   line-height: 4.05rem;
-  padding: 96px 24px 57px 24px;
+  margin: 96px 24px 57px 24px;
 }
 
 .we-offer {
@@ -184,6 +191,8 @@ header h1 {
 
 main {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .client-testimonials img {
@@ -217,7 +226,7 @@ main {
   font-weight: 900;
 }
 
-section.client-testimonials {
+.client-testimonials {
   padding-bottom: 92px;
   padding-top: 66px;
 }
@@ -234,6 +243,9 @@ section.client-testimonials {
 
 .pictures div {
   display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
 }
 
 footer {
@@ -245,13 +257,19 @@ footer {
   fill: var(--Darkmoderatecyan);
   padding: 64px 0 80px 0;
   gap: 10px;
+  min-height: 350px;
+  position: relative;
 }
 
 footer .logo path {
   fill: var(--Darkmoderatecyan);
 }
 
-.open > div {display: flex;flex-direction: row;justify-content: flex-end;}
+.open > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
 
 header svg.logo {
   width: 149px;
@@ -262,14 +280,14 @@ footer a {
   color: var(--Darkmoderatecyan);
   text-decoration: none;
   font-size: 1.2rem;
+  display: block;
 }
 
 footer .links {
-  margin: 44px 0 88px;
+  margin: 45px 45px 88px 45px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding: 0 24px;
+  justify-content: center;
 }
 
 footer svg.logo {
@@ -284,7 +302,10 @@ footer span.social-net {
   gap: 28px;
 }
 
-picture {display: flex;justify-content: center;}
+picture {
+  display: flex;
+  justify-content: center;
+}
 
 .open {
   display: flex;
@@ -338,43 +359,76 @@ header .triangle {
   height: 26px;
 }
 
-
-a {}
+a {
+}
 
 .we-offer article:first-child a:hover {
-    text-decoration-color: var(--Yellow);
-    cursor: pointer;
+  text-decoration-color: var(--Yellow);
+  cursor: pointer;
 }
 
 .we-offer article:nth-child(2) a:hover {
-    text-decoration-color: var(--Softred);
-    cursor: pointer;
+  text-decoration-color: var(--Softred);
+  cursor: pointer;
 }
 
 footer a:hover {
-    color: var(--White);
+  color: var(--White);
 }
 
 .social-net svg:hover path {
-    /* fill: var(--White); */
-    /* cursor: pointer; */
+  /* fill: var(--White); */
+  /* cursor: pointer; */
 }
 
-.social-net svg {}
+.social-net svg {
+}
 
 .social-net div:hover {
-    fill: var(--White);
-    cursor: pointer;
+  fill: var(--White);
+  cursor: pointer;
 }
 
 .social-net svg path {
-    fill: inherit;
+  fill: inherit;
 }
 
 header .menu-button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 header .desktop-menu {
-    display: none;
+  display: none;
+}
+
+.pictures .milk-bottles {
+  background-image: url(./images/mobile/image-gallery-milkbottles.jpg);
+}
+.pictures .orange {
+  background-image: url(./images/mobile/image-gallery-orange.jpg);
+}
+
+.pictures .cone {
+  background-image: url(./images/mobile/image-gallery-cone.jpg);
+}
+
+.pictures .sugar-cubes {
+  background-image: url(./images/mobile/image-gallery-sugar-cubes.jpg);
+}
+
+
+.social-net {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.links span {
+    font-size: 1.8rem;
 }
