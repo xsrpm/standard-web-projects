@@ -25,6 +25,7 @@ body {
 form {
   display: flex;
   flex-direction: column;
+  gap: 35px;
 }
 
 input {
@@ -44,8 +45,6 @@ label {
 a {
   text-decoration: none;
   color: var(--Hospitalgreen);
-  display: inline-block;
-  text-align: center;
 }
 
 .brand {
@@ -84,7 +83,11 @@ a {
   font-weight: bold;
 }
 
-.center {
+.text-center {
+  text-align: center;
+}
+
+.hide {
   text-align: center;
 }
 
@@ -121,7 +124,6 @@ a {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  margin-bottom: 40px;
 }
 
 .form-buttons {
