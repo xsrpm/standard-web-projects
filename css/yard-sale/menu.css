@@ -1,4 +1,4 @@
-.menu nav {
+.menu .filter-mav {
   display: none;
 }
 
@@ -97,11 +97,11 @@ header .brand img {
     display: none;
   }
 
-  .menu nav {
+  .menu .filter-nav {
     display: flex;
   }
 
-  .menu ul {
+  .menu .filter-nav ul {
     list-style: none;
     display: flex;
     align-items: center;
@@ -109,16 +109,16 @@ header .brand img {
     padding: 0 20px;
   }
 
-  .menu nav ul li a {
+  .menu .filter-nav ul li a {
     color: var(--Verylightpink);
     font-size: 0.9rem;
   }
 
-  .menu nav ul li.selected a {
+  .menu .filter-nav ul li.selected a {
     color: var(--Hospitalgreen);
   }
 
-  .menu nav ul li.selected {
+  .menu .filter-nav ul li.selected {
     border: var(--Hospitalgreen) 1px solid;
     border-radius: 10px;
     padding: 3px 10px;
