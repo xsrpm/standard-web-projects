@@ -33,9 +33,10 @@ menu > picture {
 .user-menu {
   display: flex;
   justify-content: flex-end;
+  gap: 5%;
 }
 
-.user-menu > div {
+.user-menu > ul {
   display: none;
 }
 
@@ -55,13 +56,41 @@ menu > picture {
   height: 23px;
 }
 
+.user-menu .email-user span:first-child {
+  overflow: hidden;
+}
+
+header .brand {
+  font-size: 0.8rem;
+  display: flex;
+}
+
+header .brand img {
+  height: 17px;
+}
+
+.menu img {
+  width: 23px;
+  height: 17.54px;
+}
+
+.menu picture {
+  display: flex;
+}
+
 @media screen and (min-width: 640px) {
   header {
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 54px;
   }
   header .brand {
     order: -1;
     justify-content: flex-start;
+    font-size: 1.5rem;
+  }
+
+  header .brand img {
+    height: 25.5px;
   }
 
   .menu picture {
@@ -76,7 +105,7 @@ menu > picture {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 4%;
     padding: 0 20px;
   }
 
@@ -94,5 +123,20 @@ menu > picture {
     border-radius: 10px;
     padding: 3px 10px;
     display: flex;
+  }
+
+  .user-menu > span {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .user-menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 600;
   }
 }
