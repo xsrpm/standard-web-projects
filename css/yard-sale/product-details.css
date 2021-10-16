@@ -32,6 +32,19 @@ aside {
   min-width: 375px;
 }
 
+body {
+  background-color: beige;
+}
+
+aside {
+  background-color: var(--White);
+  height: 100vh;
+}
+
+aside > img {
+  display: none;
+}
+
 @media screen and (min-width: 384px) {
   body {
     position: relative;
@@ -40,14 +53,15 @@ aside {
     position: absolute;
     right: 0;
   }
-}
 
-
-body {
-    background-color: beige;
-}
-
-aside {
-    background-color: var(--White);
-    height: 100vh;
+  aside > img {
+  position: absolute;
+  display: block;
+  padding: 10px;
+  background-color: var(--White);
+  border-radius: 50%;
+  width: 40px;
+  left: 12px;
+  top: 15px;
+  }
 }
