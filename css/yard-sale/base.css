@@ -16,17 +16,6 @@
   font-family: 'Quicksand', sans-serif;
 }
 
-body {
-  /* background-color: aquamarine; */
-  display: grid;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-}
-
 input {
   font-family: 'Quicksand', sans-serif;
   font-size: 1rem;
@@ -84,7 +73,6 @@ a {
 
 .text-center {
   text-align: center;
-  font-size: 0.9rem;
 }
 
 .hide {
@@ -118,23 +106,4 @@ a {
 
 .thin-width {
   width: 340px;
-}
-
-.form-items {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.form-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin-bottom: 30px;
-}
-
-.form-item {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
 }

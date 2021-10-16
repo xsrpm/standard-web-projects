@@ -140,3 +140,8 @@ header .brand img {
     font-weight: 600;
   }
 }
+
+
+.menu > nav {
+    display: none;
+}
