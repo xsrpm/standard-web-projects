@@ -3,8 +3,8 @@ ul li img:first-child {
   border-radius: 15px;
 }
 
-action {
-  padding: 20px;
+aside {
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -13,24 +13,25 @@ action {
 
 ul {
   list-style: none;
-  width: 335px;
+  /* width: 335px; */
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  /* gap: 20px; */
 }
 
 li {
   display: grid;
-  grid-template-columns: auto 2fr 1fr auto;
-  justify-items: center;
+  grid-template-columns: auto 1fr auto;
+  gap: 15px;
+  padding: 10px 20px;
   align-items: center;
-  gap: 10px;
 }
 
 .remove-product {
   background-image: url(./images/icons/x.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: right;
   width: 12px;
   height: 12px;
 }
@@ -46,24 +47,58 @@ ul li .precio {
   font-weight: 600;
 }
 
-
 button {
-    width: 100%;
+  width: 100%;
 }
 
 .total {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    font-weight: 600;
-    height: 76px;
-    background-color: var(--Textinputfield);
-    border-radius: 15px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-weight: 600;
+  height: 76px;
+  background-color: var(--Textinputfield);
+  border-radius: 15px;
+  align-items: center;
 }
 
 action div:last-child {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+li div:first-of-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.message {
+  display: none;
+}
+
+.removed div:first-of-type .message {display: flex;}
+
+
+.removed div:first-of-type .product-name {
+    display: none;
+}
+
+.removed div:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.removed {
+    opacity: 0.3;
+    background-color: #D8D8D8;
+}
+
+aside > div:last-child {
+    padding: 0 20px;
     display: flex;
-    gap: 20px;
     flex-direction: column;
+    gap: 15px;
 }
