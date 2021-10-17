@@ -1,7 +1,5 @@
 picture img {
   border-radius: 0 0 15px 15px;
-  max-width: 384px;
-  min-width: 375px;
   width: 100%;
 }
 
@@ -28,7 +26,6 @@ aside div:last-child p {
 }
 
 aside {
-  max-width: 384px;
   min-width: 375px;
 }
 
@@ -39,29 +36,31 @@ body {
 aside {
   background-color: var(--White);
   height: 100vh;
+  width: 100%;
 }
 
 aside > img {
   display: none;
 }
 
-@media screen and (min-width: 384px) {
+@media screen and (min-width: 640px) {
   body {
     position: relative;
   }
   aside {
     position: absolute;
     right: 0;
+    max-width: 384px;
   }
 
   aside > img {
-  position: absolute;
-  display: block;
-  padding: 10px;
-  background-color: var(--White);
-  border-radius: 50%;
-  width: 40px;
-  left: 12px;
-  top: 15px;
+    position: absolute;
+    display: block;
+    padding: 10px;
+    background-color: var(--White);
+    border-radius: 50%;
+    width: 40px;
+    left: 12px;
+    top: 15px;
   }
 }

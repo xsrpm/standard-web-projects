@@ -108,4 +108,6 @@ a {
   width: 340px;
 }
 
-body {}
+body {
+    position: relative;
+}

@@ -9,11 +9,12 @@ aside {
   justify-content: space-between;
   flex-direction: column;
   height: 100vh;
+  min-width: 375px;
+  width: 100%;
 }
 
 ul {
   list-style: none;
-  /* width: 335px; */
   display: flex;
   flex-direction: column;
   /* gap: 20px; */
@@ -78,27 +79,60 @@ li div:first-of-type {
   display: none;
 }
 
-.removed div:first-of-type .message {display: flex;}
-
+.removed div:first-of-type .message {
+  display: flex;
+}
 
 .removed div:first-of-type .product-name {
-    display: none;
+  display: none;
+}
+
+.removed div:first-of-type .price {
+  display: none;
 }
 
 .removed div:first-of-type {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 .removed {
-    opacity: 0.3;
-    background-color: #D8D8D8;
+  opacity: 0.3;
+  background-color: #d8d8d8;
 }
 
 aside > div:last-child {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+aside > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: none;
+}
+
+@media screen and (min-width: 640px) {
+  .header span {
+    font-weight: 600;
+  }
+
+  .header {
     padding: 0 20px;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+  }
+
+  aside {
+    position: absolute;
+    right: 0;
+    max-width: 384px;
+  }
 }
