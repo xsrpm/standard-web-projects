@@ -84,7 +84,6 @@ header .brand img {
     height: 54px;
   }
   header .brand {
-    order: -1;
     justify-content: flex-start;
     font-size: 1.5rem;
   }
@@ -129,6 +128,10 @@ header .brand img {
     width: 30px;
     height: 30px;
   }
+
+  header .section {
+    order: -1;
+  }
 }
 
 @media screen and (min-width: 830px) {
@@ -141,7 +144,6 @@ header .brand img {
   }
 }
 
-
 .menu > nav {
-    display: none;
+  display: none;
 }

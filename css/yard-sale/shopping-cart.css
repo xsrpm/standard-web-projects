@@ -1,0 +1,69 @@
+ul li img:first-child {
+  width: 76px;
+  border-radius: 15px;
+}
+
+action {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+  width: 335px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+li {
+  display: grid;
+  grid-template-columns: auto 2fr 1fr auto;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.remove-product {
+  background-image: url(./images/icons/x.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 12px;
+  height: 12px;
+}
+
+ul li .product-name {
+  justify-self: flex-start;
+  word-wrap: break-word;
+  font-size: 0.9rem;
+}
+
+ul li .precio {
+  justify-self: flex-end;
+  font-weight: 600;
+}
+
+
+button {
+    width: 100%;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-weight: 600;
+    height: 76px;
+    background-color: var(--Textinputfield);
+    border-radius: 15px;
+    align-items: center;
+}
+
+action div:last-child {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}

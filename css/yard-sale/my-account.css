@@ -21,7 +21,7 @@ form > div {
 .form-items {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 35px;
 }
 
 .form-buttons {
