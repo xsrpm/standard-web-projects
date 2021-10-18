@@ -33,6 +33,8 @@ label {
 a {
   text-decoration: none;
   color: var(--Hospitalgreen);
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .brand {

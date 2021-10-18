@@ -1,0 +1,74 @@
+nav {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 20px 18px 56px 39px;
+  height: 100vh;
+}
+
+nav > div:first-of-type {
+  text-align: right;
+}
+
+nav > div:nth-of-type(2) {
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+  padding: 20px 0;
+}
+
+.email {
+  display: none;
+  font-size: 0.8rem;
+}
+
+.sign-out {
+  display: none;
+}
+
+.line {
+  display: none;
+}
+
+.account {
+  display: none;
+}
+
+.logged-in .line svg {
+  display: flex;
+}
+
+.logged-in .account {
+  display: flex;
+  flex-direction: column;
+}
+
+.logged-in .email {
+  display: flex;
+}
+
+.logged-in .sign-out {
+  display: flex;
+}
+
+.logged-in .log-in {
+  display: none;
+}
+
+div:last-of-type {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+li {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.line svg {
+  display: none;
+}
