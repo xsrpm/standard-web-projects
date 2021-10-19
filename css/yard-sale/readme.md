@@ -8,3 +8,7 @@ https://www.figma.com/proto/bcEVujIzJj5PNIWwF9pP2w/Platzi_YardSale?node-id=3%3A2
 
 Basado en el proyecto del Curso Practico de Frontend Developer (Platzi)
 Profesora: Estefany Aguilar
+
+https://css-tricks.com/css-content/
+https://developer.mozilla.org/en-US/docs/Web/CSS/content
+https://www.w3schools.com/cssref/pr_gen_content.asp

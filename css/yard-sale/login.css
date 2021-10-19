@@ -17,13 +17,14 @@ body {
   display: grid;
   height: 100vh;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 35px;
   justify-content: space-between;
+  padding-bottom: 55px;
 }
 
 .form-items {
@@ -48,6 +49,34 @@ form {
   font-size: 0.8rem;
 }
 
+.message {
+  color: #d25050;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 1rem;
+  visibility: hidden;
+}
+
+.email-password-invalid label {
+  color: #d25050;
+}
+
+.email-password-invalid input {
+  outline: auto #d25050;
+}
+
+.email-password-invalid .message {
+  visibility: visible;
+}
+
+.email-invalid label[for='email'] {
+  color: #d25050;
+}
+.email-invalid input[name='email'] {
+  outline: auto #d25050;
+  /*Enter a valid email address*/
+}
+
 @media screen and (min-width: 640px) {
   article {
     display: flex;
@@ -63,9 +92,4 @@ form {
   .body h1 {
     display: none;
   }
-}
-
-
-.body {
-    margin-bottom: 60px;
 }
