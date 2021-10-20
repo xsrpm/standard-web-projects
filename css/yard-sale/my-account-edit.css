@@ -1,6 +1,4 @@
 body {
-  display: grid;
-  place-items: center;
 }
 
 form {
@@ -8,7 +6,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
   gap: 40px;
 }
 
@@ -45,4 +43,13 @@ form > div {
     display: flex;
     justify-content: center;
   }
+}
+
+
+article {
+    margin: 0 auto;
+}
+
+article h2 {
+    font-size: 1.2rem;
 }

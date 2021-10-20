@@ -1,9 +1,21 @@
-picture img {
-  border-radius: 0 0 15px 15px;
+aside {
+  min-width: 375px;
+  background-color: var(--White);
+  height: 100%;
   width: 100%;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  max-width: 375px;
+  margin: 0 auto;
 }
 
-button.primary-button {
+aside picture img {
+  border-radius: 0 0 15px 15px;
+  width: 100%;
+  /* max-width: 375px; */
+}
+
+aside button.primary-button {
   display: flex;
   padding: 10px;
   gap: 10px;
@@ -12,31 +24,19 @@ button.primary-button {
   justify-content: center;
 }
 
-div:last-child {
+aside div:last-child {
   padding: 20px;
+  display: grid;
 }
 
-h3 {
+aside h3 {
   font-weight: 100;
   font-size: 1rem;
 }
 
 aside div:last-child p {
-  margin: 20px 0 50px 0;
-}
-
-aside {
-  min-width: 375px;
-}
-
-body {
-  background-color: beige;
-}
-
-aside {
-  background-color: var(--White);
-  height: 100vh;
-  width: 100%;
+  overflow-y: scroll;
+  padding-bottom: 20px;
 }
 
 aside > img {
@@ -51,6 +51,8 @@ aside > img {
     position: absolute;
     right: 0;
     max-width: 384px;
+    max-height: 384px;
+    top: 54px;
   }
 
   aside > img {
@@ -63,4 +65,8 @@ aside > img {
     left: 12px;
     top: 15px;
   }
+}
+
+aside h2 {
+  font-size: 1.2rem;
 }

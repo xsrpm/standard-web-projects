@@ -10,12 +10,12 @@ article {
   gap: 40px;
 }
 
-li img {
+article li img {
   width: 76px;
   border-radius: 20px;
 }
 
-li {
+article li {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -23,7 +23,7 @@ li {
   padding-right: 18px;
 }
 
-h3 {
+article h3 {
   display: none;
 }
 
@@ -35,33 +35,33 @@ article > div > div {
   border-radius: 10px;
 }
 
-ul {
+article ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-li div {
+article li div {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-li div .price {
+article li div .price {
   text-align: right;
   font-weight: 600;
 }
 
-.product-name {
+article .product-name {
   font-size: 0.8rem;
 }
 
-div > .price {
+article div > .price {
   font-weight: 600;
 }
 
-.date {
+article .date {
   font-weight: 600;
 }
 
@@ -78,7 +78,7 @@ article > div {
     justify-content: center;
   }
 
-  h3 {
+  article h3 {
     display: flex;
   }
 }

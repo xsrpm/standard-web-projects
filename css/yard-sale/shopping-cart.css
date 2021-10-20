@@ -118,6 +118,10 @@ aside > div:first-child {
   display: none;
 }
 
+.price {
+  text-align: right;
+}
+
 @media screen and (min-width: 640px) {
   .header span {
     font-weight: 600;
@@ -134,9 +138,4 @@ aside > div:first-child {
     right: 0;
     max-width: 384px;
   }
-}
-
-
-.price {
-    text-align: right;
 }
