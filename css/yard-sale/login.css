@@ -1,4 +1,12 @@
-h1 {
+.header {
+  display: none;
+}
+
+body {
+  grid-template-rows: 1fr;
+}
+
+article .brand {
   margin-bottom: 60px;
 }
 
@@ -6,18 +14,13 @@ article {
   display: grid;
   grid-template-rows: auto 1fr auto;
   padding: 25px 0 25px 0;
+  margin: 0 auto;
+  height: 100%;
 }
 
-.header {
+.login__header {
   text-align: right;
   margin-bottom: 80px;
-}
-
-body {
-  display: grid;
-  height: 100vh;
-  justify-content: center;
-  margin-bottom: 60px;
 }
 
 form {
@@ -78,12 +81,18 @@ form {
 }
 
 @media screen and (min-width: 640px) {
+  .header {
+    display: grid;
+  }
+  body {
+    grid-template-rows: auto 1fr;
+  }
   article {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .header {
+  .login__header {
     display: none;
   }
   .body {
