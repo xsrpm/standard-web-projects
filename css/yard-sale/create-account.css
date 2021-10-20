@@ -1,7 +1,14 @@
-body {
+article {
+  margin: 0 auto;
+  height: 100%;
+  display: grid;
 }
 
-form {
+article h2 {
+  font-size: 1rem;
+}
+
+article form {
   padding: 30px 0;
   display: flex;
   justify-content: space-between;
@@ -12,48 +19,37 @@ form {
   flex-direction: column;
 }
 
-form > div {
+article form > div {
   display: grid;
   gap: 40px;
   width: 100%;
 }
 
-.form-items {
+article .form-items {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 
-.form-buttons {
+article .form-buttons {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.form-item {
+article .form-item {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.form-buttons > p {
+article .form-buttons > p {
   font-size: 0.8rem;
 }
 
 @media screen and (min-width: 640px) {
-  form {
+  article form {
     display: flex;
     justify-content: center;
   }
-}
-
-
-article {
-    margin: 0 auto;
-    height: 100%;
-    display: grid;
-}
-
-h2 {
-    font-size: 1rem;
 }

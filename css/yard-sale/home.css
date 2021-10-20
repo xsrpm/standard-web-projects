@@ -1,60 +1,4 @@
-.home .products {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 4%;
-  justify-content: center;
-}
-
-.product img {
-  width: 163px;
-  border-radius: 15px;
-}
-
-.products .product-info {
-  display: flex;
-  justify-content: space-between;
-}
-
-.product-info > div:last-child {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 40px;
-  height: 40px;
-}
-
-.add-to-cart {
-  background-image: url(./images/icons/bt_add_to_cart.svg);
-}
-
-.added-to-cart {
-  background-image: url(./images/icons/bt_added_to_cart.svg);
-  border-radius: 50%;
-  -webkit-box-shadow: 0px 0px 4px 3px #c9c9c9;
-  box-shadow: 0px 0px 4px 3px #c9c9c9;
-}
-
-.product-info > div:first-child > p {
-  font-size: 0.8rem;
-}
-
-.product-info h3 {
-  display: flex;
-  gap: 4%;
-}
-
-.home__header {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-content: center;
-}
-
-.home__header p span:first-child {
-  font-weight: 600;
-}
-
-.home {
+article {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -62,44 +6,109 @@
   align-content: center;
 }
 
-.filter-nav {
+article {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  align-content: center;
 }
 
-.filter-nav ul {
+article .products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(auto, 163px));
+  gap: 20px;
+  justify-content: center;
+}
+
+article .product img {
+  width: 163px;
+  border-radius: 15px;
+}
+
+article .products .product-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+article .product-info > div:last-child {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+article .add-to-cart {
+  background-image: url(./images/icons/bt_add_to_cart.svg);
+}
+
+article .added-to-cart {
+  background-image: url(./images/icons/bt_added_to_cart.svg);
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 4px 3px #c9c9c9;
+  box-shadow: 0px 0px 4px 3px #c9c9c9;
+}
+
+article .product-info > div:first-child > p {
+  font-size: 0.8rem;
+}
+
+article .product-info h3 {
+  display: flex;
+  gap: 4%;
+}
+
+article .home__header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-content: center;
+}
+
+article .home__header p span:first-child {
+  font-weight: 600;
+}
+
+article .filter-nav {
+  display: flex;
+  overflow-x: scroll;
+}
+
+article .filter-nav ul {
   list-style: none;
   display: flex;
   gap: 4%;
   align-items: center;
 }
 
-.filter-nav ul li a {
+article .filter-nav ul li a {
   color: var(--Verylightpink);
   font-size: 0.9rem;
 }
 
-.filter-nav ul li.selected a {
+article filter-nav ul li.selected a {
   color: var(--Hospitalgreen);
 }
 
-.filter-nav ul li.selected {
+article .filter-nav ul li.selected {
   border: var(--Hospitalgreen) 1px solid;
   border-radius: 10px;
   padding: 3px 10px;
   display: flex;
 }
 
-input[type='text']::placeholder {
+article input[type='text']::placeholder {
   color: var(--Verylightpink);
 }
 
-.product-image {
+article .product-image {
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.product-image .message {
+article .product-image .message {
   position: absolute;
   top: calc(50% - 20px);
   background-color: #ffffff;
@@ -115,38 +124,53 @@ input[type='text']::placeholder {
   display: none;
 }
 
-.product-removed .product-image .message {
+article .product-removed .product-image .message {
   display: flex;
   align-items: center;
 }
 
+article .product {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+article .search-input {
+  background-color: var(--Textinputfield);
+  border-radius: 10px;
+  display: flex;
+  padding: 0 10px;
+}
+
 @media screen and (min-width: 640px) {
-  .home__header {
+  article .home__header {
     flex-direction: row;
     display: flex;
     align-items: center;
   }
 
-  .home__header .filter-nav {
+  article .home__header .filter-nav {
     display: none;
   }
 
-  .product img {
+  article .product img {
     width: 216px;
   }
 
-  .home {
+  article {
     padding: 40px;
   }
-  .home .products {
+
+  article .products {
     gap: 20px;
-    justify-content: flex-start;
     grid-template-columns: repeat(auto-fill, minmax(auto, 216px));
   }
 }
 
-.product {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+article input[type='text'] {
+  width: 100%;
+}
+
+article input[type='text']:active {
+  outline: none;
 }
