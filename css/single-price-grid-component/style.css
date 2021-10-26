@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px dashed red; */
+}
+
+:root {
+  /*### Primary*/
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+
+  /*### Neutral*/
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+  /* --LightGrayishMagenta: hsl(300, 24%, 96%); */
+  --White: hsl(0, 0%, 100%);
+  font-size: 62.5%;
+  font-family: 'Karla', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--LightGray);
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: grid;
+  -webkit-box-shadow: 0px 1px 5px 6px rgba(0,0,0,0.03);
+  -moz-box-shadow: 0px 1px 5px 6px rgba(0,0,0,0.03);
+  box-shadow: 0px 1px 13px 6px rgb(0 0 0 / 3%);
+}
+
+main {
+  display: grid;
+  place-content: center;
+}
+
+section:first-child {
+  background-color: var(--White);
+  border-radius: 5px 5px 0 0;
+}
+
+section:nth-child(2) {
+  background-color: var(--Cyan);
+}
+
+section:last-child {
+  background-color: #4abebd;
+  border-radius: 0 0 5px 5px;
+}
+
+section {
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 311px;
+}
+
+section:first-child h2 {
+  color: var(--Cyan);
+  font-size: 1.7rem;
+}
+
+section:nth-child(2) button {
+  background-color: var(--BrightYellow);
+  color: var(--White);
+  border: solid 0px;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  -webkit-box-shadow: 0px 1px 5px 6px rgba(0,0,0,0.03);
+  -moz-box-shadow: 0px 1px 5px 6px rgba(0,0,0,0.03);
+  box-shadow: 0px 1px 5px 6px rgba(0,0,0,0.03);
+}
+
+section:first-child h3 {
+  color: var(--BrightYellow);
+  font-size: 1.5rem;
+}
+
+section:first-child p {
+  color: var(--GrayishBlue);
+  font-size: 1.35rem;
+}
+
+section:nth-child(2) h2 {
+  color: var(--White);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+section:nth-child(2) h3 span:first-child {
+  color: var(--White);
+  font-size: 3rem;
+}
+
+section:nth-child(2) h3 span:last-child {
+  color: var(--LightGray);
+  font-weight: 100;
+}
+
+section:nth-child(2) p {
+  color: var(--White);
+}
+
+section:last-child h2 {
+  color: var(--White);
+  font-size: 1.8rem;
+}
+
+section:last-child li {
+  color: var(--White);
+  padding-right: 40px;
+  font-size: 1.3rem;
+}
+
+section:nth-child(2) h3 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+h2 {
+}
+
+
+section:last-child ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+button:hover {}
