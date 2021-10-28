@@ -1,0 +1,308 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px dashed red; */
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --DarkGray: hsl(0, 0%, 55%);
+  --VeryDarkGray: hsl(0, 0%, 41%);
+  font-size: 62.5%;
+  font-family: 'Alata', sans-serif;
+  /* font-family: 'Josefin Sans', sans-serif; */
+}
+
+body {
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  color: var(--White);
+  bottom: 0;
+}
+.attribution a {
+  color: var(--DarkGray);
+}
+
+header nav {
+  display: none;
+}
+
+header > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block-start: 38px;
+  padding-inline: max(23px,5%);
+}
+
+header {
+  background-image: url(./images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  block-size: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* align-content: center; */
+}
+
+img {
+  max-width: 100%;
+}
+
+header div picture:first-child img {
+  width: 145px;
+}
+
+h1 {
+  color: var(--White);
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  margin-inline: max(23px,5%);
+  border: 2px solid var(--White);
+  padding: 25px;
+  font-weight: 100;
+  font-size: 3.89rem;
+  block-size: 198px;
+  position: absolute;
+  inset-block-start: calc(50vh - 99px);
+}
+
+main > div:first-of-type {
+  padding-block-start: 96px;
+  padding-inline: 24px;
+}
+
+main {
+  background-color: var(--White);
+}
+
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 100;
+  padding-block-end: 55px;
+}
+
+main > div:first-of-type div {
+  padding-block-start: 48px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+main p {
+  text-align: center;
+  color: var(--DarkGray);
+  padding-inline: 26px;
+}
+
+main > div:last-of-type {
+  padding-block-start: 92px;
+  display: grid;
+  padding-block-end: 92px;
+}
+
+main ul li {
+  list-style: none;
+  block-size: 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: multiply;
+}
+
+main ul li:first-child {
+  background-image: url(images/mobile/image-deep-earth.jpg);
+}
+
+main ul li:nth-child(2) {
+  background-image: url(images/mobile/image-night-arcade.jpg);
+  background-color: #dc0c0c;
+  mix-blend-mode: multiply;
+}
+
+main ul li:nth-child(3) {
+  background-image: url(images/mobile/image-soccer-team.jpg);
+}
+
+main ul li:nth-child(4) {
+  background-image: url(images/mobile/image-grid.jpg);
+}
+
+main ul li:nth-child(5) {
+  background-image: url(images/mobile/image-from-above.jpg);
+}
+
+main ul li:nth-child(6) {
+  background-image: url(images/mobile/image-pocket-borealis.jpg);
+}
+
+main ul li:nth-child(7) {
+  background-image: url(images/mobile/image-curiosity.jpg);
+}
+
+main ul li:last-child {
+  background-image: url(images/mobile/image-fisheye.jpg);
+}
+
+main ul {
+  margin-inline: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+main ul li h3 {
+  color: var(--White);
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  position: absolute;
+  inset-block-end: 0;
+  padding-inline-start: 21px;
+  padding-block-end: 26px;
+  font-size: 2rem;
+}
+
+main ul li div {
+  position: relative;
+  block-size: 120px;
+  background: linear-gradient(
+    82deg,
+    rgb(31 29 29) 0%,
+    rgba(128, 128, 128, 0.32566530029980745) 52%,
+    rgba(149, 149, 149, 0.073564459963673) 100%
+  );
+}
+
+main button {
+  border: 1px solid var(--Black);
+  inline-size: 158px;
+  block-size: 41px;
+  background-color: var(--White);
+  text-transform: uppercase;
+  font-family: 'Alata', sans-serif;
+  letter-spacing: 0.3rem;
+}
+
+main > div:last-of-type > div {
+  display: flex;
+  justify-content: center;
+  padding-block-start: 33.5px;
+}
+
+footer {
+  background-color: var(--Black);
+  position: relative;
+}
+
+picture {
+  display: flex;
+}
+
+footer nav ul {
+  color: var(--White);
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 29px;
+}
+
+footer > picture > img {
+  inline-size: 144px;
+}
+
+footer > ul {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-block-end: 22px;
+}
+
+footer nav {
+  margin-block-end: 49px;
+}
+
+footer picture {
+  display: flex;
+  justify-content: center;
+  padding-block-start: 55px;
+  margin-block-end: 39px;
+}
+
+footer p {
+  color: var(--DarkGray);
+  text-align: center;
+  padding-block-end: 55px;
+}
+
+#mobile-menu.active {
+  display: flex;
+}
+
+#mobile-menu {
+  flex-direction: column;
+  position: absolute;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--Black);
+  color: var(--White);
+  align-items: center;
+}
+
+#mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 24px;
+  gap: 31px;
+  align-self: flex-start;
+  position: absolute;
+  inset-block-start: calc(50% - ((1.8rem * 5) + (31px * 4)) / 2);
+}
+
+#mobile-menu ul li {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+#mobile-menu ul li a {
+  text-decoration: none;
+  color: var(--White);
+}
+
+#mobile-menu ul li a:hover {
+  opacity: 0.5;
+}
+
+#mobile-menu > div {
+  padding-block-start: 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  inline-size: 80%;
+  max-inline-size: 1115px;
+  min-inline-size: 330px;
+}
+
+
+header > div:nth-of-type(2) {
+    position: absolute;
+    inline-size: 100%;
+    inset-block-start: calc(50vh - 99px);
+}

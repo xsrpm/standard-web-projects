@@ -1,0 +1,41 @@
+header div picture:nth-of-type(2) {
+  display: none;
+}
+
+header > div > nav {
+  display: flex;
+}
+
+header div nav ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+header div nav ul li a {
+  color: var(--White);
+  text-decoration: none;
+}
+
+header {
+  background-image: url(./images/desktop/image-hero.jpg);
+}
+
+header div picture:first-child img {
+  width: 194px;
+}
+
+h1 {
+  font-size: 7rem;
+  max-inline-size: 652px;
+  inline-size: 80%;
+  margin-inline-start: max(5%, 164px);
+  block-size: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header > div:first-child {
+  padding-inline: max(5%, 164px);
+}
