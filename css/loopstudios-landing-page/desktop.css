@@ -180,3 +180,10 @@ footer > ul {
 footer p {
   text-align: end;
 }
+
+
+main ul li h3 {
+    font-size: 3.2rem;
+    padding-inline-start: 41px;
+    padding-block-end: 39px;
+}

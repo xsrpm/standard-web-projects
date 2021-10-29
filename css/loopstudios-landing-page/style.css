@@ -120,7 +120,6 @@ main ul li {
   block-size: 120px;
   background-repeat: no-repeat;
   background-size: cover;
-  mix-blend-mode: multiply;
 }
 
 main ul li:first-child {
@@ -182,6 +181,7 @@ main ul li div {
     rgba(128, 128, 128, 0.32566530029980745) 52%,
     rgba(149, 149, 149, 0.073564459963673) 100%
   );
+  color: var(--White);
 }
 
 main button {
@@ -211,7 +211,6 @@ picture {
 }
 
 footer nav ul {
-  color: var(--White);
   flex-direction: column;
   align-items: center;
   list-style: none;
@@ -291,9 +290,8 @@ footer p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  inline-size: 80%;
-  max-inline-size: 1115px;
-  min-inline-size: 330px;
+  padding-inline: max(23px,5%);
+  inline-size: 100%;
 }
 
 header > div:nth-of-type(2) {
@@ -309,4 +307,50 @@ main > div > picture {
 
 main > div:last-child > h2 {
   padding-block-end: 55px;
+}
+
+footer nav ul li a {
+  color: var(--White);
+  text-decoration: none;
+}
+
+.link:hover {
+  position: relative;
+  cursor: pointer;
+}
+
+.link:hover::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  display: block;
+  height: 2px;
+  background-color: var(--White);
+  bottom: -14px;
+  left: calc(50% - 12px);
+}
+
+footer ul li img {
+  block-size: 24px;
+  inline-size: 24px;
+}
+
+
+main ul li:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+main ul li:hover div h3 {
+    color: var(--Black);
+    font-weight: 900;
+}
+
+main ul li div:hover {background: linear-gradient( 
+45deg, rgb(194 184 184) 0%, rgba(128, 128, 128, 0.32566530029980745) 52%, rgba(149, 149, 149, 0.073564459963673) 100% );}
+
+main button:hover {
+    background-color: var(--Black);
+    color: var(--White);
+    cursor: pointer;
 }
