@@ -41,7 +41,7 @@ header > div:first-child {
   justify-content: space-between;
   align-items: center;
   padding-block-start: 38px;
-  padding-inline: max(23px,5%);
+  padding-inline: max(23px, 5%);
 }
 
 header {
@@ -52,8 +52,6 @@ header {
   position: relative;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* align-content: center; */
 }
 
 img {
@@ -68,7 +66,7 @@ h1 {
   color: var(--White);
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
-  margin-inline: max(23px,5%);
+  margin-inline: max(23px, 5%);
   border: 2px solid var(--White);
   padding: 25px;
   font-weight: 100;
@@ -80,11 +78,12 @@ h1 {
 
 main > div:first-of-type {
   padding-block-start: 96px;
-  padding-inline: 24px;
+  position: relative;
 }
 
 main {
   background-color: var(--White);
+  padding-inline: max(23px, 5%);
 }
 
 h2 {
@@ -93,7 +92,6 @@ h2 {
   font-size: 3rem;
   text-align: center;
   font-weight: 100;
-  padding-block-end: 55px;
 }
 
 main > div:first-of-type div {
@@ -101,6 +99,8 @@ main > div:first-of-type div {
   display: flex;
   gap: 30px;
   flex-direction: column;
+  grid-column: 2/4;
+  grid-row: 1/2;
 }
 
 main p {
@@ -129,8 +129,6 @@ main ul li:first-child {
 
 main ul li:nth-child(2) {
   background-image: url(images/mobile/image-night-arcade.jpg);
-  background-color: #dc0c0c;
-  mix-blend-mode: multiply;
 }
 
 main ul li:nth-child(3) {
@@ -158,7 +156,6 @@ main ul li:last-child {
 }
 
 main ul {
-  margin-inline: 24px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -206,6 +203,7 @@ main > div:last-of-type > div {
 footer {
   background-color: var(--Black);
   position: relative;
+  padding-block: 55px;
 }
 
 picture {
@@ -239,14 +237,12 @@ footer nav {
 footer picture {
   display: flex;
   justify-content: center;
-  padding-block-start: 55px;
   margin-block-end: 39px;
 }
 
 footer p {
   color: var(--DarkGray);
   text-align: center;
-  padding-block-end: 55px;
 }
 
 #mobile-menu.active {
@@ -300,9 +296,17 @@ footer p {
   min-inline-size: 330px;
 }
 
-
 header > div:nth-of-type(2) {
-    position: absolute;
-    inline-size: 100%;
-    inset-block-start: calc(50vh - 99px);
+  position: absolute;
+  inline-size: 100%;
+  inset-block-start: calc(50vh - 99px);
+}
+
+main > div > picture {
+  display: flex;
+  justify-content: center;
+}
+
+main > div:last-child > h2 {
+  padding-block-end: 55px;
 }

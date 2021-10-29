@@ -19,6 +19,7 @@ header div nav ul li a {
 
 header {
   background-image: url(./images/desktop/image-hero.jpg);
+  block-size: 650px;
 }
 
 header div picture:first-child img {
@@ -34,8 +35,148 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: static;
+  margin-block-start: 128px;
 }
 
 header > div:first-child {
   padding-inline: max(5%, 164px);
+}
+
+main > div:first-of-type {
+  display: flex;
+  padding-block-start: 160px;
+  grid-template-rows: auto 1fr;
+}
+
+main > div:last-child > h2 {
+  text-align: left;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+main > div:first-of-type div {
+  max-inline-size: 545px;
+  padding-inline-start: 95px;
+  padding-block-start: 96px;
+  background-color: var(--White);
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline-end: 0;
+  block-size: 317px;
+}
+
+main p {
+  padding-inline: 0;
+}
+
+main {
+  padding-inline: max(5%, 164px);
+}
+
+main > div:first-of-type picture {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  display: block;
+}
+
+main > div > div > h2 {
+  text-align: left;
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+main ul {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main > div:last-of-type {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  padding-block-end: 184px;
+}
+
+main > div:last-of-type > div {
+  padding-block-start: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main ul li {
+  block-size: 450px;
+}
+
+main ul li:first-child {
+  background-image: url(images/desktop/image-deep-earth.jpg);
+}
+
+main ul li:nth-child(2) {
+  background-image: url(images/desktop/image-night-arcade.jpg);
+}
+
+main ul li:nth-child(3) {
+  background-image: url(images/desktop/image-soccer-team.jpg);
+}
+
+main ul li:nth-child(4) {
+  background-image: url(images/desktop/image-grid.jpg);
+}
+
+main ul li:nth-child(5) {
+  background-image: url(images/desktop/image-from-above.jpg);
+}
+
+main ul li:nth-child(6) {
+  background-image: url(images/desktop/image-pocket-borealis.jpg);
+}
+
+main ul li:nth-child(7) {
+  background-image: url(images/desktop/image-curiosity.jpg);
+}
+
+main ul li:last-child {
+  background-image: url(images/desktop/image-fisheye.jpg);
+}
+
+main ul li div {
+  block-size: inherit;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  padding-inline: max(5%, 164px);
+  gap: 31px;
+}
+
+footer nav {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-block-end: 0;
+}
+
+footer nav ul {
+  flex-direction: row;
+}
+
+footer picture {
+  justify-self: flex-start;
+  margin-block-end: 0;
+}
+
+footer > ul {
+  justify-self: flex-end;
+  margin-block-end: 0;
+}
+
+footer p {
+  text-align: end;
 }
