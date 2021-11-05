@@ -22,12 +22,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <header>
       <div>
-        <img src="images/logo.svg" alt="logo" />
-        <img src="images/icon-hamburger.svg" alt="menu" />
+        <picture>
+          <img src="images/logo.svg" alt="logo" />
+        </picture>
+        <picture id="menu-button" class="show">
+          <img src="images/icon-hamburger.svg" alt="menu" />
+        </picture>
+        <picture id="close-button">
+          <img src="images/icon-close.svg" alt="close menu" />
+        </picture>
       </div>
       <div>
         <h1>A modern publishing platform</h1>
@@ -37,10 +45,41 @@
           <button class="secondary-buttom">Learn More</button>
         </div>
       </div>
-
-      <div class="mobile-menu">
-        Product Overview Pricing Marketplace Features Integrations Company About
-        Team Blog Careers Connect Contact Newsletter LinkedIn Login Sign Up
+      <div id="mobile-menu">
+        <ul>
+          <li id="product-option">
+            <p>Product <span class="arrow"></span></p>
+            <ul>
+              <li>Overview</li>
+              <li>Pricing</li>
+              <li>Marketplace</li>
+              <li>Features</li>
+              <li>Integrations</li>
+            </ul>
+          </li>
+          <li id="company-option">
+            <p>Company <span class="arrow"></span></p>
+            <ul>
+              <li>About</li>
+              <li>Team</li>
+              <li>Blog</li>
+              <li>Careers</li>
+            </ul>
+          </li>
+          <li id="connect-option">
+            <p>Connect <span class="arrow"></span></p>
+            <ul>
+              <li>Contact</li>
+              <li>Newsletter</li>
+              <li>LinkedIn</li>
+            </ul>
+          </li>
+        </ul>
+        <hr />
+        <div>
+          <a href="#" alt="login">Login</a>
+          <button>Sign Up</button>
+        </div>
       </div>
     </header>
     <main>
