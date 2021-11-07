@@ -49,9 +49,6 @@ header .menu-login a {
 }
 
 header .menu-login button {
-  color: var(--LightredCTAtext);
-  font-weight: 600;
-  border-color: transparent;
 }
 
 header div:nth-of-type(2) h1 {
@@ -197,4 +194,14 @@ footer > ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1.5fr;
   text-align: left;
+}
+
+main section:last-of-type p {
+  padding-inline-end: 200px;
+}
+
+header .menu-desktop > li p:hover {
+  color: var(--Whitetext);
+  text-decoration: underline;
+  cursor: pointer;
 }

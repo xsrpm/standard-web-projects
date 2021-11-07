@@ -109,8 +109,14 @@ header .menu-login {
 
 header .primary-buttom {
   color: var(--LightredCTAtext);
-  border: 2px solid var(--Whitetext);
+  border: 2px solid transparent;
   background-color: var(--Whitetext);
+}
+
+header .primary-buttom:hover {
+  color: var(--Whitetext);
+  background-color: #ff7b86;
+  cursor: pointer;
 }
 
 header .secondary-buttom {
@@ -438,7 +444,18 @@ footer .attribution a {
   color: var(--Verylightred);
 }
 
-
 footer ul {
-    list-style: none;
+  list-style: none;
+}
+
+
+header .secondary-buttom:hover {
+    background-color: var(--Whitetext);
+    color: #ff7b86;
+    cursor: pointer;
+}
+
+footer > ul ul > li:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
