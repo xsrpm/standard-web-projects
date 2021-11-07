@@ -29,6 +29,19 @@ header .menu-desktop ul {
   top: 33px;
   text-align: left;
   display: none;
+  background-color: var(--Whitetext);
+  color: var(--Verydarkgrayblue);
+  padding-inline: 20px;
+  padding-block: 30px;
+  border-radius: 5px;
+  flex-direction: column;
+  gap: 15px;
+  width: 130px;
+  left: -25px;
+  top: 30px;
+  box-shadow: 0px -1px 5px 2px rgba(0,0,0,0.17);
+  -webkit-box-shadow: 0px -1px 5px 2px rgba(0,0,0,0.17);
+  -moz-box-shadow: 0px -1px 5px 2px rgba(0,0,0,0.17);
 }
 
 header .menu-desktop p {
@@ -205,3 +218,13 @@ header .menu-desktop > li p:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+
+
+header .menu-desktop > li:hover ul {
+    display: flex;
+}
+
+header .menu-desktop ul {
+}
+
+header .menu-desktop ul li:hover {font-weight: 600;cursor: pointer;}

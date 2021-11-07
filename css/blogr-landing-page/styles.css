@@ -272,6 +272,15 @@ header .header-right {
   display: flex;
 }
 
+header .secondary-buttom:hover {
+  background-color: var(--Whitetext);
+  color: #ff7b86;
+  cursor: pointer;
+}
+
+header .menu-desktop > li:hover ul {
+}
+
 /*#####Main*/
 
 main {
@@ -448,14 +457,7 @@ footer ul {
   list-style: none;
 }
 
-
-header .secondary-buttom:hover {
-    background-color: var(--Whitetext);
-    color: #ff7b86;
-    cursor: pointer;
-}
-
 footer > ul ul > li:hover {
-    text-decoration: underline;
-    cursor: pointer;
+  text-decoration: underline;
+  cursor: pointer;
 }
