@@ -86,13 +86,13 @@ header > div > p {
 header > div:nth-of-type(2) {
   margin-block-start: 116px;
   padding-inline: 13px;
-  max-width: 400px;
 }
 
 header > div:nth-of-type(2) > div {
   margin-block-start: 52px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 16px;
 }
 
 header button {
@@ -103,7 +103,7 @@ header button {
   font-family: 'Ubuntu', sans-serif;
 }
 
-header > div:first-of-type > div:nth-of-type(2) > div {
+header .menu-login {
   display: none;
 }
 
@@ -138,7 +138,9 @@ header .close-button {
 header .close-button.show {
   display: flex;
 }
-header .menu-button {display: none;}
+header .menu-button {
+  display: none;
+}
 header .menu-button.show {
   display: flex;
 }
@@ -164,7 +166,6 @@ header .mobile-menu > ul > li {
 }
 
 header .mobile-menu ul {
-  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 38.5px;
@@ -252,32 +253,54 @@ header .menu-desktop {
   display: none;
 }
 
-/*Main*/
+header ul {
+  list-style: none;
+}
+
+.header-left {
+  display: flex;
+  gap: 62px;
+}
+
+header .header-right {
+  display: flex;
+}
+
+/*#####Main*/
+
+main {
+  /* margin-block-start: 106px; */
+  margin-block-end: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+main p {
+  padding-inline: 42px;
+  font-size: 1.28rem;
+  line-height: 1.9rem;
+}
 
 main picture {
   display: flex;
+  justify-content: center;
 }
 
 main picture img {
   width: 100%;
+  max-width: 600px;
 }
 
-main > h2:first-of-type {
+main section:first-of-type h2 {
+  padding-inline: 42px;
+  font-size: 2.1rem;
   margin-block-end: 48px;
 }
 
-main > h2:nth-of-type(2) {
-  margin-block-start: 56px;
-  margin-block-end: 28px;
-}
-
-main > h2:nth-of-type(3) {
-  margin-block-start: 51px;
-  margin-block-end: 32px;
-}
-
-main > div {
-  margin-block-start: 275px;
+main section:nth-of-type(2) {
+  /* margin-block-start: 275px; */
   block-size: 625px;
   background: linear-gradient(
     179deg,
@@ -287,59 +310,78 @@ main > div {
   border-radius: 0 100px 0 100px;
   color: var(--Whitetext);
   padding-block-start: 229px;
-  margin-block-end: 76px;
   position: relative;
+  width: 100%;
 }
 
-main div h2 {
+main section:nth-of-type(2) h2 {
   margin-block-end: 36px;
   font-size: 3rem;
 }
 
-main > h2:nth-of-type(4) {
-  margin-block-start: 56px;
-  margin-block-end: 32px;
-}
-
-main > h2:nth-of-type(5) {
-  margin-block-start: 52px;
-  margin-block-end: 32px;
-}
-
-main {
-  margin-block-start: 106px;
-  margin-block-end: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-main h2 {
-  padding-inline: 42px;
-  font-size: 2.1rem;
-}
-
-main p {
-  padding-inline: 42px;
-  font-size: 1.28rem;
-  line-height: 1.9rem;
-}
-
-main div p {
+main section:nth-of-type(2) p {
   font-size: 1.3rem;
+  padding-inline-end: 0;
 }
 
-main > div > picture > img {
+main section:nth-of-type(2) picture > img {
   width: 320px;
 }
 
-main > div > picture {
+main section:nth-of-type(2) picture {
   position: absolute;
   top: -153px;
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 100%;
+}
+
+main section:first-of-type > div {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-block-start: 56px;
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+main section:last-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding-block-start: 50px;
+}
+
+main section:last-of-type > div {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  text-align: start;
+  /* padding-block-start: 100px; */
+  grid-column: 2/4;
+  grid-row: 2/3;
+  justify-content: center;
+}
+
+main section:last-of-type > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+main section:first-of-type {
+  padding-block-start: 100px;
+  min-height: 1250px;
+}
+
+main section:first-of-type img {
+  object-fit: cover;
+  object-position: left;
+}
+
+main section h2 {
+  text-align: center;
 }
 
 /*footer*/
@@ -391,6 +433,12 @@ footer .attribution {
   width: 100%;
   color: var(--Whitetext);
 }
+
 footer .attribution a {
   color: var(--Verylightred);
+}
+
+
+footer ul {
+    list-style: none;
 }
