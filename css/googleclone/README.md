@@ -1,1 +1,3 @@
-El propósito de este proyecto es intentar clonar la interfaz de google.
+The purpose of this project is to try to clone the google interface.
+
+![Desktop](./desktop.png)
