@@ -47,7 +47,6 @@ main section {
 main picture {
   display: flex;
   max-width: 696px;
-  /* width: 30%; */
 }
 main picture > img {
   width: 100%;
@@ -76,6 +75,12 @@ main button {
   margin-block-start: 21px;
 }
 
+main button:hover {
+  background-color: var(--SoftMagenta);
+  color: white;
+  cursor: pointer;
+}
+
 footer {
   position: relative;
 }
@@ -96,10 +101,19 @@ footer > ul > li {
   padding: 5px;
 }
 
+footer > ul > li:hover {
+  border-color: var(--SoftMagenta);
+  cursor: pointer;
+}
+
 footer > ul > li > svg {
   width: 16px;
   height: 16px;
   fill: white;
+}
+
+footer > ul > li:hover svg {
+  fill: var(--SoftMagenta);
 }
 
 .attribution {
@@ -111,8 +125,4 @@ footer > ul > li > svg {
 }
 .attribution a {
   color: var(--SoftMagenta);
-}
-
-
-main section:first-child {
 }
