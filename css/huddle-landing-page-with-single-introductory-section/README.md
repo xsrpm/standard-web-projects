@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [SOLUTION URL](https://github.com/xsrpm/standard-web-projects/tree/master/css/huddle-landing-page-with-single-introductory-section)
+- [LIVE SITE](https://xsrpm.github.io/standard-web-projects/css/huddle-landing-page-with-single-introductory-section/)
 
 ## My process
 
