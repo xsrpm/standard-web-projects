@@ -1,0 +1,64 @@
+body {
+  padding-inline: 5%;
+  background-image: url(./images/bg-desktop.svg);
+}
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  padding-block-start: 56px;
+  padding-block-end: 0px;
+}
+
+footer > ul {
+  justify-content: flex-end;
+  padding-block-end: 3%;
+  margin-block-start: 3.25%;
+}
+
+main picture > img {
+  width: fit-content;
+}
+
+header picture img {
+  margin-block-start: 40px;
+  inline-size: 200px;
+}
+
+footer > ul > li > svg {
+  width: 27px;
+  height: 27px;
+}
+
+footer > ul > li {
+  padding: 5px;
+}
+
+header img {
+  inline-size: 200px;
+}
+
+main section:last-child {
+  padding-block-start: 50px;
+  align-items: start;
+}
+
+main h1 {
+  font-size: 4rem;
+  text-align: start;
+}
+
+main p {
+  font-size: 1.9rem;
+  text-align: start;
+}
+
+main button {
+  height: 56px;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.attribution {
+  font-size: 1rem;
+}
