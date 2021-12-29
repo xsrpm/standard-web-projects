@@ -26,7 +26,10 @@ header p {
   margin-block: 8px;
 }
 
-
 h2 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.attribution {
+  display: block;
 }

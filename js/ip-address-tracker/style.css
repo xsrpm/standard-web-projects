@@ -55,18 +55,6 @@ ul {
   z-index: 1;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: none;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 input[type='text'] {
   font-size: 1.4rem;
   outline: none;
@@ -118,9 +106,22 @@ header p {
   z-index: 0;
 }
 
-
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-input[type="text"] {cursor: pointer;}
+input[type='text'] {
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: left;
+  position: absolute;
+  bottom: 2px;
+  padding-inline-start: 5px;
+  display: none;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
