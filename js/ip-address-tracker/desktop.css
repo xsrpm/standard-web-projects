@@ -1,0 +1,32 @@
+h1 {
+  font-size: 3.15rem;
+}
+
+input[type='text'] {
+  font-size: 1.9rem;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-block: 32px;
+}
+
+header {
+  height: 280px;
+  padding-block-start: 35px;
+}
+
+header > div {
+  margin-block-end: 48px;
+}
+
+header p {
+  font-size: 2rem;
+  margin-block: 8px;
+}
+
+
+h2 {
+    font-size: 1.5rem;
+}
