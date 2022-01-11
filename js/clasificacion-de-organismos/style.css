@@ -1,0 +1,62 @@
+:root {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+div {
+  background-color: crimson;
+}
+
+body {
+  display: grid;
+  justify-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-block: 0.25rem;
+  padding-inline-end: 40px;
+}
+
+li {
+  padding-block: 1rem;
+}
+
+.nested {
+  display: none;
+}
+
+/* Style the caret/arrow */
+.caret {
+  cursor: pointer;
+  /*user-select: none;*/ /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+
+.caret::before {
+  content: '\25B6';
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+  display: block;
+}
+
+.leaf::before {
+  content: '';
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.leaf {
+  cursor: default;
+}
